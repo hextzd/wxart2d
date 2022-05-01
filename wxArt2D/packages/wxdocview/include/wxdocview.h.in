@@ -1,0 +1,22 @@
+
+#include "docviewsetup.h"
+
+//all headers
+@ART2D_DOCVIEW_IF@
+#include "wx/general/genmod.h"
+
+#if wxART2D_USE_DOCVIEW
+    #include "wx/docview/docmdiref.h"
+    #include "wx/docview/docviewref.h"
+    #include "wx/docview/doccom.h"
+#endif //wxART2D_USE_DOCVIEW
+@ART2D_DOCVIEW_END@
+
+#if wxART2D_USE_XMLPARSE
+@ART2D_DOCVIEW_IF@
+#include "wx/xmlparse/genprop.h"
+#include "wx/xmlparse/genxmlpars.h"
+#include "wx/xmlparse/xmlencode.h"
+@ART2D_DOCVIEW_END@
+#endif //wxART2D_USE_XMLPARSE
+

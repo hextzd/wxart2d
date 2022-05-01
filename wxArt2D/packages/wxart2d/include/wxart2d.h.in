@@ -1,0 +1,91 @@
+
+#include "art2dsetup.h"
+
+//all headers
+@ART2D_DOCVIEW_IF@
+#include "wx/general/genmod.h"
+
+#if wxART2D_USE_DOCVIEW
+    #include "wx/docview/docmdiref.h"
+    #include "wx/docview/docviewref.h"
+    #include "wx/docview/doccom.h"
+#endif //wxART2D_USE_DOCVIEW
+@ART2D_DOCVIEW_END@
+
+#if wxART2D_USE_XMLPARSE
+@ART2D_DOCVIEW_IF@
+#include "wx/xmlparse/genprop.h"
+#include "wx/xmlparse/genxmlpars.h"
+#include "wx/xmlparse/xmlencode.h"
+@ART2D_DOCVIEW_END@
+#endif //wxART2D_USE_XMLPARSE
+
+#if wxART2D_USE_ARTBASE
+@ART2D_ARTBASE_IF@
+#include "wx/artbase/artmod.h"
+@ART2D_ARTBASE_END@
+#endif //wxART2D_USE_ARTBASE
+
+#if wxART2D_USE_AGGDRAWER
+@ART2D_AGGDRAWER_IF@
+#include "wx/aggdrawer/aggdrawer.h"
+@ART2D_AGGDRAWER_END@
+#endif //wxART2D_USE_AGGDRAWER
+
+#if wxART2D_USE_GDIPLUSDRAWER
+@ART2D_GDIPLUSDRAWER_IF@
+#include "wx/gdiplusdrawer/gdiplusdrawer.h"
+@ART2D_GDIPLUSDRAWER_END@
+#endif //wxART2D_USE_GDIPLUSDRAWER
+
+#if wxART2D_USE_CANVAS
+@ART2D_CANVAS_IF@
+#include "wx/canvas/canmod.h"
+@ART2D_CANVAS_END@
+#endif //wxART2D_USE_CANVAS
+
+#if wxART2D_USE_KBOOL
+@ART2D_KBOOL_IF@
+#include "kbool/booleng.h"
+//#include "kbool/graph.h"
+//#include "kbool/graphlst.h"
+//#include "kbool/line.h"
+//#include "kbool/link.h"
+//#include "kbool/lpoint.h"
+//#include "kbool/node.h"
+//#include "kbool/record.h"
+//#include "kbool/scanbeam.h"
+@ART2D_KBOOL_END@
+#endif //wxART2D_USE_KBOOL
+
+#if wxART2D_USE_EDITOR
+
+@ART2D_EDITOR_IF@
+#include "wx/canextobj/canextmod.h"
+#include "wx/editor/editmod.h"
+@ART2D_EDITOR_END@
+
+
+#if wxART2D_USE_SVGIO
+@ART2D_SVGIO_IF@
+#include "wx/svgio/parssvg.h"
+@ART2D_SVGIO_END@
+#endif //wxART2D_USE_SVGIO
+
+#if wxART2D_USE_GDSIO
+@ART2D_GDSIO_IF@
+#include "wx/gdsio/gdsio.h"
+#include "wx/gdsio/gdserr.h"
+@ART2D_GDSIO_END@
+#endif //wxART2D_USE_GDSIO
+
+#endif //wxART2D_USE_EDITOR
+
+#if wxART2D_USE_CURVES
+@ART2D_CURVES_IF@
+#include "wx/curves/meta.h"
+#include "wx/curves/plotbox.h"
+@ART2D_CURVES_END@
+#endif //wxART2D_USE_CURVES
+
+

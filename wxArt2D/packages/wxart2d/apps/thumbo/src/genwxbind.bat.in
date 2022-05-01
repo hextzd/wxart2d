@@ -1,0 +1,37 @@
+@echo off
+REM @echo on
+REM This batch generates all the wxLua C++ source files from interface files.
+REM The C++ source files are only modified if any changes have been made.
+REM @echo on
+SET WXLUA=@wxLua_ROOT_DIR@
+SET LUA=lua.exe
+
+REM Find a suitable lua.exe to run
+IF EXIST %WXLUA%\bin\lua.exe SET LUA=%WXLUA%\bin\lua.exe
+IF EXIST %WXLUA%\bin\Debug\lua.exe SET LUA=%WXLUA%\bin\Debug\lua.exe
+IF EXIST %WXLUA%\bin\Release\lua.exe SET LUA=%WXLUA%\bin\Release\lua.exe
+
+IF EXIST %WXLUA%\bin\gccud_lib\lua.exe SET LUA=%WXLUA%\bin\gccud_lib\lua.exe
+IF EXIST %WXLUA%\bin\gccud_dll\lua.exe SET LUA=%WXLUA%\bin\gccud_dll\lua.exe
+IF EXIST %WXLUA%\bin\gccu_lib\lua.exe SET LUA=%WXLUA%\bin\gccu_lib\lua.exe
+IF EXIST %WXLUA%\bin\gccu_dll\lua.exe SET LUA=%WXLUA%\bin\gccu_dll\lua.exe
+IF EXIST %WXLUA%\bin\gccd_lib\lua.exe SET LUA=%WXLUA%\bin\gccd_lib\lua.exe
+IF EXIST %WXLUA%\bin\gccd_dll\lua.exe SET LUA=%WXLUA%\bin\gccd_dll\lua.exe
+IF EXIST %WXLUA%\bin\gcc_lib\lua.exe SET LUA=%WXLUA%\bin\gcc_lib\lua.exe
+IF EXIST %WXLUA%\bin\gcc_dll\lua.exe SET LUA=%WXLUA%\bin\gcc_dll\lua.exe
+
+IF EXIST %WXLUA%\bin\vcud_lib\lua.exe SET LUA=%WXLUA%\bin\vcud_lib\lua.exe
+IF EXIST %WXLUA%\bin\vcud_dll\lua.exe SET LUA=%WXLUA%\bin\vcud_dll\lua.exe
+IF EXIST %WXLUA%\bin\vcu_lib\lua.exe SET LUA=%WXLUA%\bin\vcu_lib\lua.exe
+IF EXIST %WXLUA%\bin\vcu_dll\lua.exe SET LUA=%WXLUA%\bin\vcu_dll\lua.exe
+IF EXIST %WXLUA%\bin\vcd_lib\lua.exe SET LUA=%WXLUA%\bin\vcd_lib\lua.exe
+IF EXIST %WXLUA%\bin\vcd_dll\lua.exe SET LUA=%WXLUA%\bin\vcd_dll\lua.exe
+IF EXIST %WXLUA%\bin\vc_lib\lua.exe SET LUA=%WXLUA%\bin\vc_lib\lua.exe
+IF EXIST %WXLUA%\bin\vc_dll\lua.exe SET LUA=%WXLUA%\bin\vc_dll\lua.exe
+
+echo Using this Lua executable: %LUA%
+echo Generating wxWidgets Binding
+%LUA% -e"rulesFilename=\"thumbo_rules.lua\"" %WXLUA%\bindings\genwxbind.lua
+echo Done thumbowraps
+
+

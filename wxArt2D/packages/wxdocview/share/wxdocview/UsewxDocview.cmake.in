@@ -1,0 +1,58 @@
+#
+# This module is provided as wxDocview_USE_FILE by wxDocviewConfig.cmake.  It can
+# be included in a project to load the needed compiler and linker
+# settings to use wxDocview.
+#
+
+IF(NOT wxDocview_USE_FILE_INCLUDED)
+    SET(wxDocview_USE_FILE_INCLUDED 1)
+
+    # Add compiler flags needed to use AGG.
+    SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${wxDocview_REQUIRED_C_FLAGS}")
+    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${wxDocview_REQUIRED_CXX_FLAGS}")
+
+    # Add include directories needed to use wxDocview.
+    INCLUDE_DIRECTORIES( ${wxDocview_INCLUDE_DIRS_DEPENDS} )
+    INCLUDE_DIRECTORIES(${wxDocview_INCLUDE_DIRS})
+
+    # Add link directories needed to use wxDocview.
+    LINK_DIRECTORIES(${wxDocview_LIBRARY_DIRS})
+    LINK_DIRECTORIES(${wxDocview_LIBRARY_DIRS_DEPENDS})
+
+    FOREACH( flag ${wxDocview_FLAGS} )     
+        ADD_DEFINITIONS( ${flag} )
+    ENDFOREACH( flag )
+  
+    LINK_LIBRARIES(${wxDocview_LIBRARIES})
+    
+    SET( wxWidgets_ROOT_DIR @wxWidgets_ROOT_DIR@ )
+    SET( wxWidgets_INCLUDE_DIRS  @wxWidgets_INCLUDE_DIRS@ )
+    SET( wxWidgets_LIBRARIES @wxWidgets_LIBRARIES@ )
+    SET( wxWidgets_LIBRARY_DIRS @wxWidgets_LIBRARY_DIRS@ )  
+    SET( wxWidgets_DEFINITIONS @wxWidgets_DEFINITIONS@ ) 
+    SET( wxWidgets_CXX_FLAGS @wxWidgets_CXX_FLAGS@ )  
+    SET( wxWidgets_RELEASE @wxWidgets_RELEASE@ )  
+	SET( wxWidgets_RELEASE_NODOT @wxWidgets_RELEASE_NODOT@ )  
+    SET( wxWidgets_PORT  @wxWidgets_PORT@ )  
+    SET( wxWidgets_UNV  @wxWidgets_UNV@ )  
+    SET( wxWidgets_UCD  @wxWidgets_UCD@ )  
+    SET( wxWidgets_DBG  @wxWidgets_DBG@ )  
+    SET( wxWidgets_USE_DEBUG @wxWidgets_USE_DEBUG@ )
+    SET( wxWidgets_USE_UNICODE @wxWidgets_USE_UNICODE@ )
+    SET( wxWidgets_USE_STATIC @wxWidgets_USE_STATIC@ )
+    SET( wxWidgets_USE_UNIVERSAL @wxWidgets_USE_UNIVERSAL@ )
+    SET( wxWidgets_FIND_STYLE @wxWidgets_FIND_STYLE@ )
+    SET( wxWidgets_RC @wxWidgets_RC@ )
+    SET( MSVC @MSVC@ )
+
+    FOREACH( lib ${wxDocview_LIBRARIES_WXLIKE} )     
+        LINK_LIBRARIES( ${lib} )
+    ENDFOREACH( lib )
+
+    SET( wxDocview_USE_XMLPARSE @wxDocview_USE_XMLPARSE@ )
+    SET( wxDocview_USE_LUA @wxDocview_USE_LUA@ )
+    SET( wxLua_ROOT_DIR @wxLua_ROOT_DIR@ )
+    
+    @MACROS@
+    
+ENDIF(NOT wxDocview_USE_FILE_INCLUDED)

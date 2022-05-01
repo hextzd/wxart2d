@@ -1,0 +1,91 @@
+##################################################
+# Name:        configure.ac.in
+# Purpose:     Options from CMakeLists.txt will be inserted.
+# Author:      Erik van der Wal
+# Licence:     wxWindows licence
+# RCS Id:      $Id: configure.ac.in,v 1.9 2004/10/15 19:53:12 kire_putsje Exp $
+##################################################
+
+#wxart2d version info will be placed here
+
+# just to be sure the right source directory is found
+AC_CONFIG_SRCDIR(CMakeLists.txt)
+
+#wxWidget options
+AM_OPTIONS_WXCONFIG
+
+#All wxart2d options will be placed here
+
+#checks for compilers
+AC_PROG_CC
+CMAKE_OPTIONS="${CMAKE_OPTIONS} -DCMAKE_C_COMPILER:STRING=\"${CC}\""
+CMAKE_OPTIONS="${CMAKE_OPTIONS} -DCMAKE_C_FLAGS:STRING=\"${CFLAGS}\""
+AC_PROG_CXX
+CMAKE_OPTIONS="${CMAKE_OPTIONS} -DCMAKE_CXX_COMPILER:STRING=\"${CXX}\""
+CMAKE_OPTIONS="${CMAKE_OPTIONS} -DCMAKE_CXX_FLAGS:STRING=\"${CXXFLAGS}\""
+
+#check for cmake
+AC_PATH_PROG( CMAKE, cmake CMake.exe, "")
+if test "$CMAKE" == ""; then
+    AC_MSG_ERROR([
+        CMake must be installed on your system
+        but cmake or CMake.exe could not be found.
+
+        Please check that cmake or CMake.exe is in path.
+        You can download CMake pre compiled binaries or
+        CMake source code from the following link:
+        http://www.cmake.org/CMake/HTML/Download.html.
+    ])
+fi
+
+#check for wx-widgets
+AM_PATH_WXCONFIG(2.4.2)
+if test "${WX_CONFIG_PATH}" == ""; then
+    AC_MSG_ERROR([
+        wxWindows must be installed on your system
+        but wx-config script couldn't be found.
+
+        Please check that wx-config is in path, the directory
+        where wxWindows libraries are installed (returned by
+        'wx-config --libs' command) is in LD_LIBRARY_PATH or
+        equivalent variable and wxWindows version is 2.4.2 or above.
+    ])
+fi
+CMAKE_OPTIONS="${CMAKE_OPTIONS} -DCMAKE_WX_CONFIG:PATH=\"${WX_CONFIG_PATH}\""
+
+#check for freetype
+if test "${enable_freetype+set}" = set; then
+    #check for libtool version >7.0.1 (= freetype >2.0.4)
+    AC_CHECK_FT2(7.0.1,
+        CMAKE_OPTIONS="${CMAKE_OPTIONS} -DFT2_CONFIG:FILEPATH=\"${FT2_CONFIG}\""
+	#this check (AC_CHECK_FT2) allready verifies the library by compiling a
+	#piece of test code, therefore no test needed anymore in cmake.
+        CMAKE_OPTIONS="${CMAKE_OPTIONS} -DFT2_NO_TEST:BOOLEAN=TRUE"
+    )
+fi
+
+# gtk2 option
+AC_ARG_ENABLE(gtk2, AC_HELP_STRING([--with-gtk2],[Use gtk2 ( e.g when wxWidget is doing so)]),
+  [
+    if test "$enableval" = yes; then
+      CMAKE_OPTIONS="${CMAKE_OPTIONS} -DWXWIDGET_GTK2:BOOLEAN=TRUE"
+    else
+      CMAKE_OPTIONS="${CMAKE_OPTIONS} -DWXWIDGET_GTK2:BOOLEAN=FALSE"
+    fi
+  ]
+)
+
+#include prefix path
+if test "${prefix}" != NONE; then
+    CMAKE_OPTIONS="${CMAKE_OPTIONS} -DCMAKE_INSTALL_PREFIX:PATH=\"${prefix}\""
+fi
+
+#Since we are using configure, we most likely want to use Unix Makefiles.
+CMAKE_OPTIONS="${CMAKE_OPTIONS} -G\"Unix Makefiles\""
+
+#run cmake
+#This is done through an intermediate script. I cannot think of another way
+#to do this yet. I had a lot of problems with "'s
+echo "${CMAKE} $CMAKE_OPTIONS ${srcdir}" > configure.cmake
+rm CMakeCache.txt
+. ./configure.cmake

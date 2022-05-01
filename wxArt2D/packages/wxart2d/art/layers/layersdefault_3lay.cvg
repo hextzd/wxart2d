@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<cvg classname="a2dObject">
+    <title>layersettings</title>
+    <desc>description</desc>
+    <o classname="a2dLayers" hitflags="">
+        <o classname="a2dLayerInfo" name="layer0" layer="0" hitflags="" layervisible="true" layerselectable="true" readlayer="true" inmap="0" outmap="0" order="0" description="" feature="" subfeature="" type="SIGNAL" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o type="a2dSTROKE_ONE_COLOUR" colour="RED">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o type="a2dFILL_BITMAP" style="a2dFILL_STIPPLE" colour="#FA00F0" colour2="BLACK" filename="pat_59.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="layer1" layer="1" hitflags="" layervisible="true" layerselectable="true" readlayer="true" inmap="1" outmap="1" order="1" description="" feature="" subfeature="" type="SIGNAL" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o type="a2dSTROKE_ONE_COLOUR" colour="YELLOW">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o type="a2dFILL_BITMAP" style="a2dFILL_STIPPLE" colour="GREEN" colour2="BLACK" filename="pat_60.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="layer2" layer="2" hitflags="" layervisible="true" layerselectable="true" readlayer="true" inmap="2" outmap="2" order="2" description="" feature="" subfeature="" type="SIGNAL" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o type="a2dSTROKE_ONE_COLOUR" colour="YELLOW">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o type="a2dFILL_BITMAP" style="a2dFILL_STIPPLE" colour="RED" colour2="BLACK" filename="pat_61.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+    </o>
+</cvg>

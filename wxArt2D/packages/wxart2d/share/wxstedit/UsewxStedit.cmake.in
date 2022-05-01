@@ -1,0 +1,42 @@
+#
+# This module is provided as wxStedit_USE_FILE by wxSteditConfig.cmake.  It can
+# be included in a project to load the needed compiler and linker
+# settings to use wxStedit.
+#
+
+IF(NOT wxStedit_USE_FILE_INCLUDED)
+    SET(wxStedit_USE_FILE_INCLUDED 1)
+
+    SET( wxStedit_VERSION @wxStedit_VERSION@ )
+    SET( wxStedit_MAJOR_VERSION @wxStedit_MAJOR_VERSION@ )
+    SET( wxStedit_MINOR_VERSION @wxStedit_MINOR_VERSION@ )
+    SET( wxStedit_BUILD_VERSION @wxStedit_BUILD_VERSION@ )
+
+    SET( wxStedit_PREFIX  "@wxStedit_PREFIX@" )
+    
+    # Add compiler flags needed to use wxStedit.
+    SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${wxStedit_REQUIRED_C_FLAGS}")
+    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${wxStedit_REQUIRED_CXX_FLAGS}")
+
+    # Add include directories needed to use wxStedit.
+    INCLUDE_DIRECTORIES( ${wxStedit_INCLUDE_DIRS_DEPENDS} )
+    INCLUDE_DIRECTORIES(${wxStedit_INCLUDE_DIRS})
+
+    # Add link directories needed to use wxStedit.
+    LINK_DIRECTORIES(${wxStedit_LIBRARY_DIRS})
+    LINK_DIRECTORIES(${wxStedit_LIBRARY_DIRS_DEPENDS})
+
+    FOREACH( flag ${wxStedit_FLAGS} )     
+        ADD_DEFINITIONS( ${flag} )
+    ENDFOREACH( flag )
+  
+    LINK_LIBRARIES(${wxStedit_LIBRARIES})
+    
+    #MESSAGE( "all libs: ${wxStedit_LIBRARIES_WXLIKE}")
+    FOREACH( lib ${wxStedit_LIBRARIES_WXLIKE} )     
+        LINK_LIBRARIES( ${wxStedit_OUTPUTLIBPREFIX}${lib}${wxStedit_OUTPUTLIBPOSTFIX} )
+    ENDFOREACH( lib )
+
+    SET( wxStedit_USE_WXSTEDIT @wxStedit_USE_WXSTEDIT@ )
+        
+ENDIF(NOT wxStedit_USE_FILE_INCLUDED)

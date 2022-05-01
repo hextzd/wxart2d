@@ -1,0 +1,7 @@
+PROJECT( svgio )
+
+IF ( WXART2D_USE_SVGIO )
+ 
+    ADD_SUBDIRECTORY( src )
+    
+ENDIF ( WXART2D_USE_SVGIO )

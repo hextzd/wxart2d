@@ -1,0 +1,16 @@
+// The configuration file used as template by the configure script
+
+#ifndef __WXDOCVIEW_OPTION_H__
+#define __WXDOCVIEW_OPTION_H__
+
+#undef wxART2D_USE_DOCVIEW
+#undef wxART2D_USE_LUAWRAPS
+#undef wxART2D_USE_XMLPARSE
+
+// all module's options of wxDocview
+
+// these options are defined for external modules and programs
+
+@WXDOCVIEW_OPTION@
+
+#endif //__ART2D_OPTION_H__

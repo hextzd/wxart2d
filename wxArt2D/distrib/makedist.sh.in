@@ -1,0 +1,113 @@
+#!/bin/sh
+
+saxon=/c/data/tools/saxon
+docbook=/c/data/tools/docbook/docbook-xsl-1.61.3
+graphviz=/c/data/tools/Graphviz
+doxygen=/c/data/tools/doxygen
+
+PATH=$graphviz/bin:$doxygen/bin:$saxon:$PATH
+
+usage()
+{
+    echo generate tar gz distribution and documentation for wxArt2D.
+    echo start this script 
+    echo For example: 
+    echo Usage: makedist.sh 
+    exit 1
+}
+
+doreplace()
+{
+    thefile=$1
+    theexpr=$2
+
+    if [ -f $thefile ]; then
+      sed -e "$theexpr" < $thefile > $thefile.tmp
+      mv $thefile.tmp $thefile
+    else
+      echo "*** $thefile not found."
+    fi
+}
+
+gendoc()
+{
+    cd @wxart2d_BINARY_DIR_UNIXED@/doc/
+    if ! test -f "@wxart2d_BINARY_DIR_UNIXED@/doc/html/canvas.html" ; then
+        doxygen doxygen.doxy > aap.txt 2>&1
+        
+        echo  generate docbook
+        
+        saxon -o ./html/canvas.html @wxart2d_BINARY_DIR_UNIXED@/doc/docbook/canvasbt.xml $docbook/html/klaas2.xsl 
+
+        #chunked multi document
+        cd html
+        saxon @wxart2d_SOURCE_DIR_UNIXED@/doc/docbook/canvasbt.xml $docbook/html/linkclass.xsl
+        
+        saxon @wxart2d_SOURCE_DIR_UNIXED@/doc/docbook/canvasbt.xml $docbook/htmlhelp/linkclasshtmlhelp.xsl
+        
+    fi
+    cd $DESTINATIONDIR
+}
+
+WARTVER=@WXART2D_VERSION@
+echo ${WARTVER}
+
+echo  generate from:   @wxart2d_SOURCE_DIR_UNIXED@
+echo  build in:  @wxart2d_BINARY_DIR_UNIXED@/distrib
+
+DESTINATIONDIR=@wxart2d_BINARY_DIR_UNIXED@/distrib
+
+if ! test -d "@wxart2d_SOURCE_DIR_UNIXED@" ; then
+    usage
+fi    
+if ! test -d "@wxart2d_BINARY_DIR_UNIXED@/distrib" ; then
+    usage
+fi
+
+#generate doxygen and docbook docs
+gendoc
+
+# generate a file of all needed files in distribution
+# skip all CVS directories and *.bak and .#* files
+#find @wxart2d_SOURCE_DIR_UNIXED@ -name CVS -prune -o -name *.bak -o -name .#* -o -type f  -print > $DESTINATIONDIR/filelist.txt
+echo create filelist from $SOURCEDIR
+cd @wxart2d_SOURCE_DIR_UNIXED@
+find . -name CVS -prune -o -name *.bak -o -name .#* -o -type f -print  > $DESTINATIONDIR/filelist.txt
+
+#some more filtering
+cat $DESTINATIONDIR/filelist.txt | grep -v propeditoops |\
+grep -v apps/tetocad | \
+grep -v apps/thumbo | grep -v SVGSAMPLES | \
+grep -v apps/template > $DESTINATIONDIR/filelistfilter.txt
+
+# create a tar archive containing all files in fileslist.txt 
+echo tar filelist to $DESTINATIONDIR/wxArt2D-${WARTVER}.tar
+rm -f $DESTINATIONDIR/wxArt2D-${WARTVER}.tar 
+tar cf $DESTINATIONDIR/wxArt2D-${WARTVER}.tar -T $DESTINATIONDIR/filelistfilter.txt
+
+#extract to generate docs for it.
+cd $DESTINATIONDIR
+echo untar to version directory
+rm -rf wxArt2D-${WARTVER}
+mkdir wxArt2D-${WARTVER}
+cd wxArt2D-${WARTVER}
+tar xf ../wxArt2D-${WARTVER}.tar
+cd ..
+rm wxArt2D-${WARTVER}.tar
+
+#dowhat
+echo move doc to distrib
+cp -r @wxart2d_BINARY_DIR_UNIXED@/doc/html  $DESTINATIONDIR/wxArt2D-${WARTVER}/doc
+rm -rf $DESTINATIONDIR/wxArt2D-${WARTVER}/doc/xml
+rm -rf $DESTINATIONDIR/wxArt2D-${WARTVER}/doc/docbook
+
+echo tar and gzip this version directory
+rm -rf wxArt2D-${WARTVER}.tar 
+tar cf wxArt2D-${WARTVER}.tar wxArt2D-${WARTVER}/*
+rm -rf wxArt2D-${WARTVER}.tar.gz 
+gzip wxArt2D-${WARTVER}.tar 
+rm -rf wxArt2D-${WARTVER}.tar 
+
+
+
+

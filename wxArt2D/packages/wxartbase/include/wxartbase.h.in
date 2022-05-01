@@ -1,0 +1,17 @@
+
+#include "wxartbasesetup.h"
+
+//all headers
+@ART2D_ARTBASE_IF@
+#include "wx/general/genmod.h"
+
+@ART2D_ARTBASE_END@
+
+#if wxART2D_USE_XMLPARSE
+@ART2D_ARTBASE_IF@
+#include "wx/xmlparse/genprop.h"
+#include "wx/xmlparse/genxmlpars.h"
+#include "wx/xmlparse/xmlencode.h"
+@ART2D_ARTBASE_END@
+#endif //wxART2D_USE_XMLPARSE
+

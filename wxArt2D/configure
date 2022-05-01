@@ -1,0 +1,210 @@
+#!/bin/bash
+
+installprefix="/usr/local"
+verbose="OFF"
+CWD=`pwd`
+CMAKE=cmake
+wxversion="2.8"
+wxdebug="OFF"
+wxstatic="ON"
+wxunicode="ON"
+
+# all option names not used by bsub command are allowed here
+while [ "$#" -gt "0" ]
+do
+    case $1 in
+        -h|--help) 
+            echo "configure wxArt2D"
+            echo "-p|--prefix pathToInstallDir :for a different install directory (default /usr/local)"
+            echo "-g Use GUI with cmake-gui else cmake is used):"
+            echo "-v|--verbose :generate verbose makefiles"
+            echo "-d|--wxdebug ON/OFF: enable/disable debug on wxWidgets"
+            echo "-s|--wxstatic ON/OFF: static or shared on wxWidgets"
+            echo "-u|--wxunicode ON/OFF: enable/disable wxWidgets"
+            echo "-wx|--wxversion nn : version of wxWidgets" 
+            echo "example: ../trunk/wxArt2D/configure -prefix /thales/thales_localwork/soft/usr/local -v -g -u OFF -s ON -d ON"
+
+        exit 0 ;;
+
+        -p | --prefix ) 
+            shift
+            installprefix="$1" 
+            ;;
+
+        -wx|--wxversion) 
+            shift
+            wxversion="$1"
+            ;;
+        -d|--wxdebug) 
+            shift
+            if [ "$1" = "ON" ] || [ "$1" = "OFF" ]; then
+                wxdebug="$1"
+            else
+                echo "wrong --wxdebug option, should be ON or OFF"    
+                exit 0
+            fi    
+            ;;
+        -s|--wxstatic) 
+            shift
+            if [ "$1" = "ON" ] || [ "$1" = "OFF" ]; then
+                wxstatic="$1"
+            else
+                echo "wrong --wxstatic option, should be ON or OFF"    
+                exit 0
+            fi    
+            ;;
+        -u|--wxunicode) 
+            shift
+            if [ "$1" = "ON" ] || [ "$1" = "OFF" ]; then
+                wxunicode="$1"
+            else
+                echo "wrong --wxunicode option, should be ON or OFF"    
+                exit 0
+            fi    
+            ;;
+
+        -g|--gui) 
+            CMAKE=cmake-gui ;;
+
+        -v|--verbose) 
+            verbose="ON" ;;
+        *)
+            echo "UnKnow option $1 for usage type: configure --help"
+            exit 0 ;;
+    esac   
+    shift
+done
+
+if [ "`which ${CMAKE}`" = "" ]; then
+    echo $CMAKE not found, set path to it.
+    exit
+fi
+
+if [ "`which wx-config`" = "" ]; then
+    echo wx-config not found \nIf you compiled and installed wxWidgets, set the path to it.\nElse compile and install wxWidgets first.
+    exit
+else
+    echo wx-config --selected-config will be used as default: `wx-config --selected-config` 
+fi
+
+echo "build in: $CWD"
+read -p "Is this the directory to build in (y/n):"
+if [ "$REPLY" != "y" ] && [ "$REPLY" != "" ] ; then
+    exit
+fi
+
+# test in tree build
+if [ ! -f "$CWD"/configure ]; then
+    if [ ! -d ../trunk/wxArt2D ]; then
+        read -p "Where is the source? (../trunk/wxArt2D):"
+        if [ ! -d $REPLY ]; then
+            echo "did not find the source in $REPLY"
+        else
+            wxArt2D_root=$REPLY
+        fi
+    else           
+        wxArt2D_root=$CWD/../trunk/wxArt2D
+    fi
+else
+    wxArt2D_root=$CWD
+fi
+echo "Source from: $wxArt2D_root"
+
+echo "Creating directories to build in."
+if [ ! -d ./thirdparty ]; then
+    mkdir thirdparty
+fi
+if [ ! -d ./thirdparty/kbool ]; then
+    mkdir thirdparty/kbool
+fi
+if [ ! -d ./thirdparty/agg-2.4 ]; then
+    mkdir thirdparty/agg-2.4
+fi
+if [ ! -d ./packages ]; then
+    mkdir packages
+fi
+if [ ! -d ./packages/wxdocview ]; then
+    mkdir packages/wxdocview
+fi
+if [ ! -d ./packages/wxart2d ]; then
+    mkdir packages/wxart2d
+fi
+
+#CMAKE_PARS="-DCMAKE_VERBOSE_MAKEFILE=${verbose} -DCMAKE_INSTALL_PREFIX=${installprefix}"
+#if [ "${CMAKE}" = "cmake-gui" ]; then
+    CMAKE_PARS=""
+    cachefile="//Install path prefix, prepended onto install directories.\n"
+    cachefile=${cachefile}"CMAKE_INSTALL_PREFIX:PATH=${installprefix}\n"
+    cachefile=${cachefile}"CMAKE_VERBOSE_MAKEFILE:BOOL=${verbose}\n"
+    cachefile=${cachefile}"CMAKE_GENERATOR:INTERNAL=Unix Makefiles\n"
+    cachefile=${cachefile}"wxWidgets_IN_PFVERSION:STRING=${wxversion}\n"
+    cachefile=${cachefile}"wxWidgets_IN_PORT:STRING=gtk2\n"
+    cachefile=${cachefile}"wxWidgets_IN_USE_DEBUG:BOOL=${wxdebug}\n"
+    cachefile=${cachefile}"wxWidgets_IN_USE_STATIC:BOOL=${wxstatic}\n"
+    cachefile=${cachefile}"wxWidgets_IN_USE_UNICODE:BOOL=${wxunicode}\n"
+  
+#fi
+
+#echo $CMAKE_PARS
+
+echo "build kbool from ${wxArt2D_root}/thirdparty/kbool in `pwd`"
+cd $CWD/thirdparty/kbool 
+#if [ ! -f ./CMakeCache.txt ]; then
+    echo -e $cachefile > CMakeCache.txt
+#fi
+echo ${CMAKE} "${wxArt2D_root}/thirdparty/kbool"  $CMAKE_PARS
+${CMAKE} "${wxArt2D_root}/thirdparty/kbool"  $CMAKE_PARS
+make
+
+echo "build kbool from ${wxArt2D_root}/thirdparty/agg-2.4"
+cd $CWD/thirdparty/agg-2.4
+#if [ ! -f ./CMakeCache.txt ]; then
+    echo -e $cachefile > CMakeCache.txt
+#fi
+${CMAKE} "${wxArt2D_root}/thirdparty/agg-2.4"  $CMAKE_PARS
+make
+
+echo "build wxdocview from ${wxArt2D_root}/packages/wxdocview"
+cd $CWD/packages/wxdocview
+#if [ ! -f ./CMakeCache.txt ]; then
+    echo -e $cachefile > CMakeCache.txt
+#fi
+${CMAKE} "${wxArt2D_root}/packages/wxdocview"  $CMAKE_PARS
+make
+echo "build wxart2d from ${wxArt2D_root}/packages/wxart2d"
+cd $CWD/packages/wxart2d
+#if [ ! -f ./CMakeCache.txt ]; then
+    echo -e $cachefile > CMakeCache.txt
+#fi
+${CMAKE} "${wxArt2D_root}/packages/wxart2d"  $CMAKE_PARS
+make
+
+read -p "Install all packages now? (y/n):"
+if [ "$REPLY" != "y" ] && [ "$REPLY" != "" ] ; then
+    exit
+fi
+SUDO=""
+read -p "Do you want to do it using sudo? (y/n):"
+if [ "$REPLY" = "y" ] && [ "$REPLY" != "" ] ; then
+    SUDO=sudo
+    echo "Install packages as sudo make install"
+fi
+echo "Install packages"
+
+echo "install kbool from $CWD/thirdparty/kbool"
+cd $CWD/thirdparty/kbool 
+$SUDO make install
+echo "install Agg from $CWD/thirdparty/agg-2.4"
+cd $CWD/thirdparty/agg-2.4
+$SUDO make install
+echo "install wxdocview from $CWD/packages/wxdocview"
+cd $CWD/packages/wxdocview
+$SUDO make install
+echo "install wxart2d from $CWD/packages/wxart2d"
+cd $CWD/packages/wxart2d
+$SUDO make install
+
+echo "All done"
+
+
+

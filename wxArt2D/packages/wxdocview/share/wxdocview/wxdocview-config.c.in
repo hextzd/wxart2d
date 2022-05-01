@@ -1,0 +1,122 @@
+/*! \file config/wxdocview-config.c.in
+    \author Erik van der Wal
+
+    Copyright: 2001-2004 (c) Klaas Holwerda
+
+    Licence: wxWidgets Licence
+
+    RCS-ID: $Id: wxdocview-config.c.in,v 1.6 2007/01/12 17:13:35 titato Exp $
+*/
+
+#include <stdio.h>
+#include <string.h>
+#include <malloc.h>
+
+extern int installed;
+
+#if (defined(WIN32) || defined(__WIN32__))
+    #if (defined (__CYGWIN__) || defined (__MINGW__))
+        #define MESSAGE( string ) system( "sh -e echo " string " ")
+    #else
+        #define MESSAGE( string ) printf( string " " )
+    #endif
+#else // UNIX
+    #define MESSAGE( string ) printf( string " " )
+//    #define MESSAGE( string ) system( "echo " string " " )
+#endif
+
+void usage(void)
+{
+    MESSAGE( 
+        "Usage: wxdocview-config [--version] [--libs] [--cflags] [--cc] [--cxxflags] [--cxx] [--cmake] [--prefix]\n"
+        "\n"
+        "wxdocview-config returns configuration information about the installed\n"
+        "version of wxDocview. It may be used to query its version and\n"
+        "installation directories and also retrieve the C and C++ compilers\n"
+        "and linker which were used for its building and the corresponding\n"
+        "flags.\n"
+        "\n");
+}
+
+int main( int argc, char *argv[] )
+{
+    int i = 1;
+    if ( argc == 1 )
+    {
+        usage();
+        return 1;
+    }
+
+    while ( i < argc )
+    {
+        char *optarg;
+        char *option = strdup( argv[i] );
+        int j = 0;
+        while (option[j] && option[j] != '=')
+            j++;
+        if ( option[j] )
+        {
+            option[j] = '\0';
+            j++;
+        }
+        optarg = option + j;
+
+        if( !strcmp( option, "--version" ) )
+        {
+            MESSAGE( "CVS build" );
+        }
+        
+        else if( !strcmp( option, "--cflags" ) || !strcmp( option, "--cxxflags" ) )
+        {
+            if ( installed )
+                MESSAGE( "@wxdocview_FLAGS@ -I@CMAKE_INSTALL_PREFIX@/include/wxdocview-@wxDocview_MAJOR_VERSION@.@wxDocview_MINOR_VERSION@" );
+            else
+                MESSAGE( "@wxdocview_FLAGS@ @wxdocview_INCLUDE_DIRS@" );            
+        }
+        
+        else if( !strcmp( option, "--libs" ) )
+        {
+            if (installed)
+                MESSAGE( "-L@CMAKE_INSTALL_PREFIX@/lib/wxdocview @wxdocview_LIBRARIES@" );
+            else
+                MESSAGE( "@wxdocview_LIBRARY_DIRS@ @wxdocview_LIBRARIES@" );
+        }
+        
+        else if( !strcmp( option, "--cc" ) )
+        {
+            MESSAGE( "@CMAKE_C_COMPILER@" );
+        }
+        
+        else if( !strcmp( option, "--cxx" ) )
+        {
+            MESSAGE( "@CMAKE_CXX_COMPILER@" );
+        }
+        
+        else if( !strcmp( option, "--cmake" ) )
+        {
+            if (installed)
+                MESSAGE( "@CMAKE_INSTALL_PREFIX@/share/wxdocview/wxdocviewconfig.cmake" );
+            else
+                MESSAGE( "@wxdocview_BINARY_DIR@/share/wxdocview/wxDocviewConfig.cmake" );
+        }
+        
+        else if( !strcmp( option, "--prefix" ) )
+        {
+            if (installed)
+                MESSAGE( "@CMAKE_INSTALL_PREFIX@" );
+            else
+                MESSAGE( "@wxdocview_BINARY_DIR@" );
+        }
+        
+        else
+        {
+            free( option );
+            usage();
+            return 1;
+        }
+        
+        free( option );
+        i++;
+    }
+    return 0;
+}

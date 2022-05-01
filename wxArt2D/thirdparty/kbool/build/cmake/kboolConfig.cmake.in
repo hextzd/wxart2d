@@ -1,0 +1,53 @@
+#set where kboolConfig.cmake was found, all else relative to that.
+
+SET( kbool_FLAGS "" )
+SET( kbool_INCLUDE_DIRS "" )
+SET( kbool_LIBRARY_DIRS "" )
+SET( kbool_LIBRARIES "" )
+
+SET( kbool_FLAGS @kbool_FLAGS@ )
+
+IF (kbool_INSIDE_BUILD)
+    # this is configured to be used inside the build directory, when compiling from source.
+    SET( kbool_INCLUDE_DIRS_CONFIG @kbool_INCLUDE_DIRS@ )
+    #convert relative to absolute
+    FOREACH( includedir ${kbool_INCLUDE_DIRS_CONFIG} )
+        SET( kbool_INCLUDE_DIRS ${kbool_INCLUDE_DIRS} "@kbool_SOURCE_DIR@/${includedir}" )
+    ENDFOREACH( includedir )
+ELSE (kbool_INSIDE_BUILD)
+    SET( kbool_INCLUDE_DIRS ${kbool_INCLUDE_DIRS} "${kbool_DIR_SHARE}/../../include/kbool" )
+ENDIF (kbool_INSIDE_BUILD)
+
+SET( kbool_LIBRARY_DIRS @kbool_LIBRARY_DIRS@ )
+
+SET( kbool_USE_FILE ${kbool_DIR_SHARE}/Usekbool.cmake )
+
+#options that where set
+SET( kbool_USE_DEBUG @kbool_USE_DEBUG@ )
+
+SET( kbool_DIR ${kbool_DIR} CACHE STRING "Kbool root directory" FORCE )
+SET( kbool_FLAGS ${kbool_FLAGS} CACHE STRING "Kbool package flags" FORCE )
+SET( kbool_INCLUDE_DIRS ${kbool_INCLUDE_DIRS} CACHE STRING "Kbool package libs include paths" FORCE )
+SET( kbool_LIBRARY_DIRS ${kbool_LIBRARY_DIRS} CACHE STRING "Kbool package libs directory paths" FORCE )
+SET( kbool_LIBRARIES ${kbool_LIBRARIES} CACHE STRING "Kbool package libraries" FORCE )
+
+FOREACH( lib @kbool_LIBRARIES@ )    
+    set( wanted ${lib} )
+    SET( kbool_LIBRARIES ${kbool_LIBRARIES} ${wanted} )
+    FIND_LIBRARY( found_wanted
+      NAMES ${wanted}
+      PATHS
+      ${kbool_DIR}
+      NO_DEFAULT_PATH
+      PATH_SUFFIXES lib64 lib lib/Debug lib/Release
+    )
+    if ( found_wanted )
+        #message( STATUS "kbool library ${wanted} is found in ${kbool_DIR}" )
+    else ( found_wanted )
+        if(NOT kbool_FIND_QUIETLY)
+            message( ERROR "kbool library ${wanted} is not found in ${kbool_DIR}" )
+        endif()    
+    endif ( found_wanted )
+ENDFOREACH( lib )  
+MARK_AS_ADVANCED( found_wanted )
+

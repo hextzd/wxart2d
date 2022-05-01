@@ -1,0 +1,3 @@
+s/a2dprec.h/docviewprec.h/
+s/art2dsetup.h/docviewsetup.h/
+s/a2dprivate.h/docviewprivate.h/

@@ -1,0 +1,17 @@
+/*! \mainpage wxArt2D index page
+
+    \htmlonly
+    <a href="http://www.wxart2d.org">Reference Documentation</a> 
+    \endhtmlonly
+        
+    \section most important classes
+
+    a2dCanvasObject instances are stored in a a2dCanvasDocument.
+
+    a2dCanvasDocument is derived from a2dDocument, which is part of the docview framework.
+    
+    a2dCanvasView is the drawing context for a a2dCanvasDocument, and a2dCanvas is a window used by a2dCanvasView
+    for displaying part of a document. a2dCanvasView is derived from a2dView, which is part of the docview framework.
+    
+*/
+

@@ -1,0 +1,103 @@
+# wxDocviewConfig.cmake was found in a share/wxdocview directory, all else relative to that.
+# wxDocview install root is two levels higher.
+
+# this version is configured to be used inside the build directory, when compiling from source.
+# See wxDocviewConfigOutBuild.cmake.in for what is done to be used for the installation of wxDocview.
+
+SET( wxDocview_VERSION @wxDocview_VERSION@ )
+SET( wxDocview_MAJOR_VERSION @wxDocview_MAJOR_VERSION@ )
+SET( wxDocview_MINOR_VERSION @wxDocview_MINOR_VERSION@ )
+SET( wxDocview_BUILD_VERSION @wxDocview_BUILD_VERSION@ )
+
+IF (wxDocview_INSIDE_BUILD)
+    # this is configured to be used inside the build directory, when compiling from source.
+    # internal build uses the configured wxart2d.h from the binary tree.
+    # internal build uses the configured wxdocview.h from the binary tree.
+    SET( wxDocview_INCLUDE_DIRS @wxDocview_INCLUDE_DIRS@ )
+    SET( wxDocview_INCLUDE_DIRS @wxdocview_BINARY_DIR@/include ${wxDocview_INCLUDE_DIRS} )
+ELSE (wxDocview_INSIDE_BUILD)
+    #convert relative to absolute
+    # USE wxart2d-${WXART2D_MAJOR_VERSION}.${WXART2D_MINOR_VERSION}
+    SET( wxDocview_INCLUDE_DIRS ${wxDocview_INCLUDE_DIRS} "${wxDocview_DIR_SHARE}/../../lib/wxdocview/include/@wxWidgets_SELECTED_CONFIG@" )
+    SET( wxDocview_INCLUDE_DIRS ${wxDocview_INCLUDE_DIRS} "${wxDocview_DIR_SHARE}/../../include/wxdocview-${wxDocview_MAJOR_VERSION}.${wxDocview_MINOR_VERSION}" )
+ENDIF (wxDocview_INSIDE_BUILD)
+
+SET( wxDocview_FLAGS @wxDocview_FLAGS@ )
+SET( wxDocview_INCLUDE_DIRS_DEPENDS @wxDocview_INCLUDE_DIRS_DEPENDS@ )
+SET( wxDocview_LIBRARIES @wxDocview_LIBRARIES@ )
+
+SET( wxDocview_LIBRARY_DIRS "${wxDocview_DIR_SHARE}/../../lib" )
+# keep the external full path directories seperate, to keep say /usr/local/lib as last
+SET( wxDocview_LIBRARY_DIRS_DEPENDS @wxDocview_LIBRARY_DIRS_DEPENDS@ )
+SET( wxDocview_USE_FILE ${wxDocview_DIR_SHARE}/UsewxDocview.cmake )
+SET( wxDocview_PREFIX  "${wxDocview_DIR_SHARE}/../.." )
+set( wxDocview_LIBRARIES_WXLIKE  @wxDocview_LIBRARIES_WXLIKE@ )
+
+#options that where set
+
+SET( wxDocview_FLAGS ${wxDocview_FLAGS} CACHE STRING "wxDocview package flags" FORCE )
+SET( wxDocview_INCLUDE_DIRS_DEPENDS ${wxDocview_INCLUDE_DIRS_DEPENDS} CACHE STRING "wxDocview dependency include paths" FORCE )
+SET( wxDocview_INCLUDE_DIRS ${wxDocview_INCLUDE_DIRS} CACHE STRING "wxDocview package include paths" FORCE )
+SET( wxDocview_LIBRARY_DIRS ${wxDocview_LIBRARY_DIRS} CACHE STRING "wxDocview package libs directory paths" FORCE )
+SET( wxDocview_LIBRARIES ${wxDocview_LIBRARIES} CACHE STRING "wxDocview package libraries" FORCE )
+SET( wxDocview_LIBRARIES_WXLIKE ${wxDocview_LIBRARIES_WXLIKE} CACHE STRING "wxDocview libraries wxlike" FORCE  )
+SET( wxDocview_PREFIX ${wxDocview_PREFIX} CACHE STRING "wxDocview prefix" FORCE )
+SET( wxDocview_wxWidgets_SELECTED_CONFIG @wxWidgets_SELECTED_CONFIG@ CACHE STRING "the wxWidgets configuration used for this compilation of wxDocview"  FORCE )
+
+MARK_AS_ADVANCED( 
+    wxDocview_FLAGS 
+    wxDocview_INCLUDE_DIRS_DEPENDS
+    wxDocview_INCLUDE_DIRS 
+    wxDocview_LIBRARY_DIRS 
+    wxDocview_LIBRARIES 
+    wxDocview_LIBRARIES_WXLIKE 
+    wxDocview_PREFIX
+    wxDocview_wxWidgets_SELECTED_CONFIG
+)
+
+SET( wxWidgets_ROOT_DIR @wxWidgets_ROOT_DIR@ )
+SET( wxWidgets_INCLUDE_DIRS  @wxWidgets_INCLUDE_DIRS@ )
+SET( wxWidgets_LIBRARIES @wxWidgets_LIBRARIES@ )
+SET( wxWidgets_LIBRARY_DIRS @wxWidgets_LIBRARY_DIRS@ )  
+SET( wxWidgets_DEFINITIONS @wxWidgets_DEFINITIONS@ ) 
+SET( wxWidgets_CXX_FLAGS @wxWidgets_CXX_FLAGS@ )  
+SET( wxWidgets_RELEASE @wxWidgets_RELEASE@ )  
+SET( wxWidgets_RELEASE_NODOT @wxWidgets_RELEASE_NODOT@ )  
+SET( wxWidgets_PORT  @wxWidgets_PORT@ )  
+SET( wxWidgets_UNV  @wxWidgets_UNV@ )  
+SET( wxWidgets_UCD  @wxWidgets_UCD@ )  
+SET( wxWidgets_DBG  @wxWidgets_DBG@ )  
+SET( wxWidgets_USE_DEBUG @wxWidgets_USE_DEBUG@ )
+SET( wxWidgets_USE_UNICODE @wxWidgets_USE_UNICODE@ )
+SET( wxWidgets_USE_STATIC @wxWidgets_USE_STATIC@ )
+SET( wxWidgets_USE_UNIVERSAL @wxWidgets_USE_UNIVERSAL@ )
+SET( wxWidgets_FIND_STYLE @wxWidgets_FIND_STYLE@ )
+SET( MSVC @MSVC@ )
+SET( WIN32GUI @WIN32GUI@ )  
+ 
+FOREACH( wanted ${wxDocview_LIBRARIES_WXLIKE} )    
+    SET( wxDocview_LIBRARIES ${wxDocview_LIBRARIES} ${wanted} )
+    # check if available or not
+    FIND_LIBRARY( found_${wanted}
+      NAMES ${wanted}
+      PATHS
+      ${wxDocview_DIR}
+      NO_DEFAULT_PATH
+      PATH_SUFFIXES lib64 lib lib/Debug lib/Release
+    )
+    if ( found_${wanted} )       
+        if(NOT wxDocview_FIND_QUIETLY)
+            message( STATUS "wxDocview library ${wanted} is found in ${found_${wanted}}" )
+        endif()
+    else ()
+        if(NOT wxDocview_FIND_QUIETLY)
+            message( ERROR "wxDocview library ${wanted} is not found in ${wxDocview_DIR}" )
+        endif()
+    endif ()
+    MARK_AS_ADVANCED( found_${OUTPUTLIBPREFIX}${lib}${OUTPUTLIBPOSTFIX} )
+ENDFOREACH()  
+
+SET( wxDocview_USE_DOCVIEW @wxDocview_USE_DOCVIEW@ )
+SET( wxDocview_USE_XMLPARSE @wxDocview_USE_XMLPARSE@ )
+SET( wxDocview_USE_LUA @wxDocview_USE_LUA@ )
+

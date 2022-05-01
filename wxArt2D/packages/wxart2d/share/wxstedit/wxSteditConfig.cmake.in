@@ -1,0 +1,160 @@
+# wxSteditConfig.cmake was found in a share/wxStedit directory, all else relative to that.
+# wxStedit install root is two levels higher.
+
+# this version is configured to be used inside the build directory, when compiling from source.
+# See wxSteditConfigOutBuild.cmake.in for what is done to be used for the installation of wxStedit.
+
+SET( wxStedit_VERSION 1.6.0 )
+SET( wxStedit_MAJOR_VERSION 1 )
+SET( wxStedit_MINOR_VERSION 6 )
+SET( wxStedit_BUILD_VERSION 0 )
+
+SET( wxStedit_PREFIX  "@where_is_stedit_root@" )
+
+SET( wxStedit_INCLUDE_DIRS ${wxStedit_PREFIX}/include )
+
+set( wxStedit_LIBRARIES "" )
+
+# form the naming 
+IF( ${wxWidgets_FIND_STYLE} STREQUAL "WIN32_STYLE_FIND" )
+
+    if( MSVC OR MSVC_IDE OR MSVC60 OR MSVC70 OR MSVC71 OR MSVC80 )
+        set( s_wxCompiler "vc" )
+    endif( MSVC OR MSVC_IDE OR MSVC60 OR MSVC70 OR MSVC71 OR MSVC80 )
+    if( BORLAND )
+        set( s_wxCompiler "bcc" )
+    endif( BORLAND )
+    if( "${CMAKE_CXX_COMPILER}" MATCHES ".*wcl.*" )
+        set( s_wxCompiler "wat" )
+    endif( "${CMAKE_CXX_COMPILER}" MATCHES ".*wcl.*" )
+    if( MINGW )
+        set( s_wxCompiler "gcc" )
+    endif( MINGW )   
+
+    IF( wxWidgets_USE_STATIC )
+        SET( s_packLibraryDirs ${wxStedit_PREFIX}/lib ${wxStedit_PREFIX}/lib/${s_wxCompiler}_lib )
+    ELSE( wxWidgets_USE_STATIC )
+        SET( s_packLibraryDirs ${wxStedit_PREFIX}/lib ${wxStedit_PREFIX}/lib/${s_wxCompiler}_dll )
+    ENDIF( wxWidgets_USE_STATIC )    
+
+    SET( wxStedit_OUTPUTLIBPREFIX wxcode_${wxWidgets_PORT}${wxWidgets_UNV}${wxWidgets_RELEASE_NODOT}${wxWidgets_UCD}${wxWidgets_DBG}_ )
+    SET( wxStedit_OUTPUTLIBPOSTFIX "" )
+ELSE( ${wxWidgets_FIND_STYLE} STREQUAL "WIN32_STYLE_FIND" )    
+    SET( s_packLibraryDirs "${wxStedit_PREFIX}/lib" )        
+    # how will output libraries be  prefixed
+    SET( wxStedit_OUTPUTLIBPREFIX wxcode_${wxWidgets_PORT}${wxWidgets_UNV}${wxWidgets_UCD}${wxWidgets_DBG}_ )
+    SET( wxStedit_OUTPUTLIBPOSTFIX "-${wxWidgets_RELEASE}" )      
+ENDIF( ${wxWidgets_FIND_STYLE} STREQUAL "WIN32_STYLE_FIND" ) 
+    
+SET( wxStedit_LIBRARY_DIRS "${s_packLibraryDirs}" )
+
+SET( wxStedit_USE_FILE UsewxStedit.cmake )
+
+if ( wxWidgets_RELEASE MATCHES "[0-2].[0-8].*" )
+	if(WIN32)
+		set( wxStedit_LIBRARIES_WXLIKE "stedit" )
+	else(WIN32)
+		set( wxStedit_LIBRARIES_WXLIKE "stedit" )
+	endif(WIN32)
+else()
+	if(WIN32)
+        #wxstedit-wx29mswud-1.6.0.lib
+		set( wxStedit_LIBRARIES "wxstedit-wx${wxWidgets_RELEASE}${wxWidgets_PORT}${wxWidgets_UNV}${wxWidgets_UCD}${wxWidgets_DBG}-${wxStedit_VERSION}.lib" )
+        set( wxStedit_LIBRARIES_WXLIKE "" )
+	else(WIN32)
+        #libwxstedit-wx29gtk2u-1.6.0.a
+		set( wxStedit_LIBRARIES "wxstedit-wx${wxWidgets_RELEASE_NODOT}${wxWidgets_PORT}${wxWidgets_UNV}${wxWidgets_UCD}${wxWidgets_DBG}-${wxStedit_VERSION}.a" )
+		#set( wxStedit_LIBRARIES "wxstedit-wx${wxWidgets_RELEASE_NODOT}${wxWidgets_PORT}${wxWidgets_UNV}${wxWidgets_UCD}-${wxStedit_VERSION}.a" )
+        set( wxStedit_LIBRARIES_WXLIKE "" )
+	endif(WIN32)
+endif()
+
+SET( wxWidgets_ROOT_DIR @wxWidgets_ROOT_DIR@ )
+SET( wxWidgets_RELEASE @wxWidgets_RELEASE@ )  
+SET( wxWidgets_RELEASE_NODOT @wxWidgets_RELEASE_NODOT@ )  
+SET( wxWidgets_PORT  @wxWidgets_PORT@ )  
+SET( wxWidgets_UNV  @wxWidgets_UNV@ )  
+SET( wxWidgets_UCD  @wxWidgets_UCD@ )  
+SET( wxWidgets_DBG  @wxWidgets_DBG@ )  
+SET( wxWidgets_USE_DEBUG @wxWidgets_USE_DEBUG@ )
+SET( wxWidgets_USE_UNICODE @wxWidgets_USE_UNICODE@ )
+SET( wxWidgets_USE_STATIC @wxWidgets_USE_STATIC@ )
+SET( wxWidgets_USE_UNIVERSAL @wxWidgets_USE_UNIVERSAL@ )
+SET( wxWidgets_FIND_STYLE @wxWidgets_FIND_STYLE@ )
+SET( MSVC @MSVC@ )
+SET( WIN32GUI @WIN32GUI@ )  
+
+find_file( wxStedit_setup 
+    NAMES setup.h
+    PATHS ${wxStedit_PREFIX}
+    NO_DEFAULT_PATH
+    PATH_SUFFIXES 
+		include/wx/stedit
+)
+
+if ( wxStedit_setup )       
+    if(NOT wxStedit_FIND_QUIETLY)
+        message( STATUS "wxStedit setup.h is found in ${wxStedit_PREFIX}/include/wx/stedit" )
+    endif()
+else ()
+    if(NOT wxStedit_FIND_QUIETLY)
+        message( ERROR "wxStedit setup.h is NOT found in ${wxStedit_PREFIX}/include/wx/stedit" )
+    endif()
+endif ()
+ 
+ 
+FOREACH( lib ${wxStedit_LIBRARIES_WXLIKE} )    
+    set( wanted ${wxStedit_OUTPUTLIBPREFIX}${lib}${wxStedit_OUTPUTLIBPOSTFIX} )
+    set( wxsteditwxlikelibs ${wxsteditwxlikelibs} ${wanted} )
+    # check if available or not
+    FIND_LIBRARY( found_${wanted}
+      NAMES ${wanted}
+      PATHS 
+        ${wxStedit_LIBRARY_DIRS} 
+        ${wxStedit_PREFIX}
+        ${CMAKE_INSTALL_PREFIX}
+      NO_DEFAULT_PATH
+      PATH_SUFFIXES lib64 lib
+    )
+    if ( found_${wanted} )       
+        if(NOT wxStedit_FIND_QUIETLY)
+            message( STATUS "wxStedit library ${wanted} is found in ${found_${wanted}}" )
+        endif()
+    else ()
+        if(NOT wxStedit_FIND_QUIETLY)
+            message( ERROR "wxStedit library ${wanted} is not found in ${wxStedit_PREFIX} or ${CMAKE_INSTALL_PREFIX}" )
+        endif()
+    endif ()
+    MARK_AS_ADVANCED( found_${wanted} )
+ENDFOREACH( lib )  
+# put them in front of all other libraries
+SET( wxStedit_LIBRARIES ${wxsteditwxlikelibs} ${wxStedit_LIBRARIES} )
+
+IF(NOT wxStedit_FIND_QUIETLY)
+    MESSAGE ( STATUS "wxStedit_DIR => ${wxStedit_DIR}" )
+    MESSAGE ( STATUS "wxStedit_PREFIX => ${wxStedit_PREFIX}" )
+    MESSAGE ( STATUS "wxStedit_INCLUDE_DIRS => ${wxStedit_INCLUDE_DIRS}" )
+    MESSAGE ( STATUS "wxStedit_LIBRARIES => ${wxStedit_LIBRARIES}" )
+    MESSAGE ( STATUS "wxStedit_LIBRARY_DIRS => ${wxStedit_LIBRARY_DIRS}" )
+    MESSAGE ( STATUS "wxStedit_LIBRARIES_WXLIKE => ${wxStedit_LIBRARIES_WXLIKE}" )
+ENDIF(NOT wxStedit_FIND_QUIETLY)
+
+#options that where set
+
+SET( wxStedit_INCLUDE_DIRS ${wxStedit_INCLUDE_DIRS} CACHE STRING "wxStedit package include paths" FORCE )
+SET( wxStedit_LIBRARY_DIRS ${wxStedit_LIBRARY_DIRS} CACHE STRING "wxStedit package libs directory paths" FORCE )
+SET( wxStedit_LIBRARIES ${wxStedit_LIBRARIES} CACHE STRING "wxStedit package libraries" FORCE )
+SET( wxStedit_LIBRARIES_WXLIKE ${wxStedit_LIBRARIES_WXLIKE} CACHE STRING "wxStedit libraries wxlike" FORCE  )
+SET( wxStedit_PREFIX ${wxStedit_PREFIX} CACHE STRING "wxStedit prefix" FORCE )
+SET( wxStedit_wxWidgets_SELECTED_CONFIG @wxWidgets_SELECTED_CONFIG@ CACHE STRING "the wxWidgets configuration used for this compilation of wxStedit"  FORCE )
+
+MARK_AS_ADVANCED( 
+    wxStedit_INCLUDE_DIRS 
+    wxStedit_LIBRARY_DIRS 
+    wxStedit_LIBRARIES 
+    wxStedit_LIBRARIES_WXLIKE 
+    wxStedit_PREFIX
+    wxStedit_wxWidgets_SELECTED_CONFIG
+)
+
+

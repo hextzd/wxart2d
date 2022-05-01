@@ -1,0 +1,1 @@
+int installed = 0;

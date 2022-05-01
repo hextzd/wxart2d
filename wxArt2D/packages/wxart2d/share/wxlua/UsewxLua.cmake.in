@@ -1,0 +1,46 @@
+#
+# This module is provided as wxLua_USE_FILE by wxLuaConfig.cmake.  It can
+# be included in a project to load the needed compiler and linker
+# settings to use wxLua.
+#
+
+IF(NOT wxLua_USE_FILE_INCLUDED)
+    SET(wxLua_USE_FILE_INCLUDED 1)
+
+    SET( wxLua_VERSION @wxLua_VERSION@ )
+    SET( wxLua_MAJOR_VERSION @wxLua_MAJOR_VERSION@ )
+    SET( wxLua_MINOR_VERSION @wxLua_MINOR_VERSION@ )
+    SET( wxLua_BUILD_VERSION @wxLua_BUILD_VERSION@ )
+
+    SET( wxLua_PREFIX  "@wxLua_PREFIX@" )
+    set( wxLua_ROOT_DIR "@wxLua_ROOT_DIR@" )
+
+
+    # Add compiler flags needed to use wxLua.
+    SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${wxLua_REQUIRED_C_FLAGS}")
+    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${wxLua_REQUIRED_CXX_FLAGS}")
+
+    # Add include directories needed to use wxLua.
+    INCLUDE_DIRECTORIES( ${wxLua_INCLUDE_DIRS_DEPENDS} )
+    INCLUDE_DIRECTORIES(${wxLua_INCLUDE_DIRS})
+
+    # Add link directories needed to use wxLua.
+    LINK_DIRECTORIES(${wxLua_LIBRARY_DIRS})
+    LINK_DIRECTORIES(${wxLua_LIBRARY_DIRS_DEPENDS})
+
+    FOREACH( flag ${wxLua_FLAGS} )     
+        ADD_DEFINITIONS( ${flag} )
+    ENDFOREACH( flag )
+  
+    LINK_LIBRARIES(${wxLua_LIBRARIES})
+    
+    #MESSAGE( "all libs: ${wxLua_LIBRARIES_WXLIKE}")
+    FOREACH( lib ${wxLua_LIBRARIES_WXLIKE} )     
+        LINK_LIBRARIES( ${wxLua_OUTPUTLIBPREFIX}${lib}${wxLua_OUTPUTLIBPOSTFIX} )
+    ENDFOREACH( lib )
+
+    SET( wxLua_USE_XMLPARSE @wxLua_USE_XMLPARSE@ )
+    SET( wxLua_USE_LUA @wxLua_USE_LUA@ )
+    SET( wxLua_EXE @wxLua_EXE@ )
+        
+ENDIF(NOT wxLua_USE_FILE_INCLUDED)

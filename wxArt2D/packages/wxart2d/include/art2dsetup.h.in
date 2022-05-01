@@ -1,0 +1,35 @@
+// The configuration file used as template by the configure script
+
+#ifndef __ART2D_OPTION_H__
+#define __ART2D_OPTION_H__
+
+#include "wxartbasesetup.h"
+
+
+#undef wxART2D_USE_GDIPLUSDRAWER
+#undef wxART2D_USE_AGGDRAWER
+#undef wxART2D_USE_ARTBASE
+#undef wxART2D_USE_CANEXTOBJ
+#undef wxART2D_USE_CANVAS
+#undef wxART2D_USE_CURVES
+#undef wxART2D_USE_EDITOR
+#undef wxART2D_USE_GDSIO
+#undef wxART2D_USE_KBOOL
+#undef wxART2D_USE_KEYIO
+#undef wxART2D_USE_LUAWRAPS
+#undef wxART2D_USE_SVGIO
+#undef wxART2D_USE_XMLPARSE
+#undef WXART2D_USE_OPENGL
+
+// external dependencies...
+#undef wxART2D_USE_FREETYPE
+#undef wxART2D_USE_LUA
+#undef wxART2D_USE_AGG
+
+// all module's options of wxArt2D
+
+// these options are defined for external modules and programs
+
+@ART2D_OPTION@
+
+#endif //__ART2D_OPTION_H__

@@ -1,0 +1,64 @@
+#set where AggConfig.cmake was found, all else relative to that.
+# one higher as "bin" dir is all of agg
+
+SET( Agg_FLAGS "" )
+SET( Agg_INCLUDE_DIRS "" )
+SET( Agg_LIBRARY_DIRS "" )
+SET( Agg_LIBRARIES "" )
+
+SET( Agg_FLAGS @Agg_FLAGS@ )
+
+SET( Agg_INCLUDE_DIRS_CONFIG @Agg_INCLUDE_DIRS@ )
+#convert relative to absolute
+FOREACH( includedir ${Agg_INCLUDE_DIRS_CONFIG} )
+    IF ( Agg_INSIDE_BUILD )
+        SET( Agg_INCLUDE_DIRS ${Agg_INCLUDE_DIRS} "@antigrain_SOURCE_DIR@/${includedir}" )
+    ELSE()
+        SET( Agg_INCLUDE_DIRS ${Agg_INCLUDE_DIRS} "${Agg_DIR_BIN}/../agg/${includedir}" )
+    ENDIF()
+ENDFOREACH( includedir )
+
+SET( Agg_LIBRARY_DIRS_CONFIG @Agg_LIBRARY_DIRS@ )
+#convert relative to absolute
+FOREACH( libdir ${Agg_LIBRARY_DIRS_CONFIG} )
+    SET( Agg_LIBRARY_DIRS ${Agg_LIBRARY_DIRS} "${Agg_DIR_BIN}/../${libdir}" )
+ENDFOREACH( libdir )
+
+SET( Agg_USE_FILE ${Agg_DIR_BIN}/UseAgg.cmake )
+
+#options that where set
+SET( agg_USE_GPC @agg_USE_GPC@ )
+SET( agg_USE_FREETYPE @agg_USE_FREETYPE@ )
+SET( agg_USE_EXPAT @agg_USE_EXPAT@ )
+SET( agg_USE_AGG2D @agg_USE_AGG2D@ )
+
+SET( Agg_DIR ${Agg_DIR} CACHE STRING "Agg root directory" FORCE )
+SET( Agg_FLAGS ${Agg_FLAGS} CACHE STRING "Agg package flags" FORCE )
+SET( Agg_INCLUDE_DIRS ${Agg_INCLUDE_DIRS} CACHE STRING "Agg package libs include paths" FORCE )
+SET( Agg_LIBRARY_DIRS ${Agg_LIBRARY_DIRS} CACHE STRING "Agg package libs directory paths" FORCE )
+SET( Agg_LIBRARIES ${Agg_LIBRARIES} CACHE STRING "Agg package libraries" FORCE )
+
+FOREACH( lib @Agg_LIBRARIES@ )    
+    set( wanted ${lib} )
+    SET( Agg_LIBRARIES ${Agg_LIBRARIES} ${wanted} )
+    FIND_LIBRARY( found_${lib}
+      NAMES ${wanted}
+      PATHS
+      ${Agg_DIR}
+      NO_DEFAULT_PATH
+      PATH_SUFFIXES lib64 lib lib/Debug lib/Release
+    )
+
+    if ( found_${lib} )
+        if(NOT Agg_FIND_QUIETLY)
+            message( STATUS "Agg library ${lib} is found in ${found_${lib}}" )
+        endif()    
+    else ()
+        if(NOT Agg_FIND_QUIETLY)
+            message( ERROR "Agg library ${lib} is not found in ${Agg_DIR}" )
+        endif()    
+    endif ()
+    MARK_AS_ADVANCED( found_${lib} )
+ENDFOREACH( lib )  
+
+

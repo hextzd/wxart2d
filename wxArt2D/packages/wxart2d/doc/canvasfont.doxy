@@ -1,0 +1,329 @@
+/*! \page howtoadda2dfont How to add a new a2dFont derivative
+ 
+This page describes briefly how to add a new font type to wxArt2D.
+The majority of this page is some fundamental code.
+It is mainly documented here, because, the font class is used in some other places,
+where it should be added by hand.
+
+This document might become outdated. Although it is assumed the general trend will
+be the same, details might changed, so please also check the source code of eg. the Stroke fonts.
+
+Unfortunately, at present a new font cannot be created separately from the library,
+since adding a new font type, involves changing some routines in the library itself.
+
+It is assumed, that you want to add a font format named monkey.
+
+\section classdef Class definition.
+
+The class definition itself is pretty straightforward. The next example shows a typical
+font class definition.
+
+\code
+
+//! Monkey font class.
+/*!
+    Clas for monkey fonts (*.MKY). This is just a demo class.
+    \ingroup property style
+    \ingroup textrelated
+*/
+class a2dFontMonkey
+    : public a2dFont
+{
+public:
+    //! Constructor.
+    /*! \param filename Filename of the vector font.
+        \param size Size in world coordinates.
+    */
+    a2dFontMonkey(const wxString& filename = wxT(""), double size = 0.0 );
+    //! Copy constructor.
+    a2dFontMonkey(const a2dFontMonkey& other);
+    //! Copy constructor.
+    a2dFontMonkey( const a2dFontMonkey& other, CloneOptions options );
+    //! Destructor.
+    virtual ~a2dFontMonkey();
+
+    // Documented in base class
+    virtual wxRefObject* Clone( CloneOptions options ) const;
+
+    //! Assignment operator.
+    a2dFontMonkey& operator = (const a2dFontMonkey& other);
+
+    // Documented in base class
+    virtual bool operator == (const a2dFont& other) const;
+
+    //! Set the font filename and load the font.
+    /*! \param filename The filename of the font. This may either be a full path, or just the
+        fontname. In the latter case, the fontpath of a2dCanvasGlobals will be used to search the font.
+        \sa a2dCanvasGlobal
+    */
+    void SetFilename(const wxString& filename);
+    //! Get the font filename.
+    /*! \param filenameonly The returned filename will be stripped of drive-letters and directories.
+        \return The filename of the font.
+    */
+    wxString GetFilename( bool filenameonly = false ) const;
+
+    // Documented in base class
+    virtual double GetWidth( wxChar c ) const;
+
+    // Documented in base class
+    virtual double GetKerning( wxChar c1, wxChar c2 ) const;
+
+    // Documented in base class
+    static void GetInfoList( a2dFontInfoList& list );
+
+    // Documented in base class
+    static a2dFont* CreateFont( const a2dFontInfo& info, bool force = false );
+
+protected:
+    //! Filename of the font.
+    wxString m_filename;
+
+private:
+    DECLARE_DYNAMIC_CLASS(a2dFontMonkey)
+};
+
+\endcode
+
+\section classimp Class implementation.
+
+The class implementation is also straightforward.
+
+The problem you have to deal with is parsing the font. Also for improved
+drawing speed, you might want to add some font caching here. (see also the
+implementation of a2dFontFreetype::GetGlyph )
+
+The extra parameter of m_fontinfo is free to use for anything, but please keep in
+mind, that this should allways be in text format. In general it will be used for
+storing the filename of the font. (see also a2dFontInfo )
+
+
+\code
+
+IMPLEMENT_DYNAMIC_CLASS( a2dFontMonkey, a2dFont )
+
+a2dFontMonkey::a2dFontMonkey(const wxString& filename, double size, int alignment)
+    : a2dFont(size, alignment)
+{
+    m_fontinfo.SetType( wxT("Monkey font") );
+    SetFilename( filename );
+}
+
+a2dFontMonkey::a2dFontMonkey( const a2dFontMonkey& other )
+    : a2dFont( other )
+{
+    m_fontinfo.SetType( wxT("Monkey font") );
+    m_width = NULL;
+    m_characters = NULL;
+    m_weight = -1;
+    *this = other;
+}
+
+a2dFontMonkey::a2dFontMonkey( const a2dFontMonkey& other, CloneOptions options )
+    : a2dFont( other, options )
+{
+    m_width = NULL;
+    m_characters = NULL;
+    m_weight = -1;
+    SetFilename( other.m_filename );
+}
+
+a2dFontMonkey::~a2dFontMonkey()
+{
+    // delete font storage
+    delete .......
+}
+
+wxRefObject* a2dFontMonkey::Clone( CloneOptions options ) const
+{
+    return new a2dFontMonkey( *this, options );
+}
+
+a2dFontMonkey& a2dFontMonkey::operator = ( const a2dFontMonkey& other )
+{
+    a2dFont::operator = ( other );
+    SetFilename( m_filename );
+    return *this;
+}
+
+bool a2dFontMonkey::operator == ( const a2dFont& other ) const
+{
+    a2dFontMonkey* mkyfont = wxDynamicCast( &other, a2dFontMonkey );
+    return (mkyfont) && a2dFont::operator == ( other )
+            && ( m_filename == mkyfont->m_filename );
+}
+
+wxString a2dFontMonkey::GetFilename(bool filenameonly) const
+{
+    if ( filenameonly )
+    {
+        wxFileName filename( m_filename );
+        return filename.GetFullName();
+    }
+    else
+        return m_filename;
+}
+
+void a2dFontMonkey::SetFilename(const wxString& filename)
+{ 
+    m_ok = false;
+
+    // delete previous font storage
+    delete .......
+    
+    m_filename = filename;
+    if ( m_filename.IsEmpty() )
+        return;
+
+    wxString fname = a2dCanvasGlobals->GetFontPathList().FindValidPath( m_filename );
+
+    // open file and proces font data.
+    
+    ...........
+    size = ...... // something loaded
+    
+    
+    // Set getextextent params normalized to the font height.
+    m_height = .... / size;
+    m_desc = .... / size;
+    m_lead = ..... / size; // or just 0.0;
+
+    // If succesfull:
+    m_ok = true;
+}
+
+double a2dFontMonkey::GetWidth( wxChar c ) const
+{
+    if ( !m_ok )
+        return 0.0;
+    
+    return m_size * ..... // width of character c;
+}
+
+double a2dFontMonkey::GetKerning( wxChar c1, wxChar c2 ) const
+{
+    if ( !m_ok )
+        return 0.0;
+    
+    return m_size * ..... // kerning between c1 and c2;
+}
+
+// create a list of fonts for the font selection dialog.
+void a2dFontMonkey::GetInfoList( a2dFontInfoList& list )
+{
+    wxPathList& pathlist = a2dCanvasGlobals->GetFontPathList();
+    for ( wxPathList::Node *node = pathlist.GetFirst(); node; node = node->GetNext() )
+    {
+        wxString path(node->GetData());
+        if (!wxDir::Exists( path ) )
+            continue;
+
+        wxArrayString files;
+        wxDir::GetAllFiles( path, &files, wxT("*.mky"), wxDIR_FILES );
+        for ( unsigned int i = 0; i < files.GetCount(); i++)
+        {
+            wxFileName filename( files.Item(i) );
+
+            // get font name and style parameters.
+            wxString fontname = ....
+            wxString stylename = ....
+            
+            // set font style for selection dialog.
+            list.Append( new a2dFontInfo( 
+                    wxT("Monkey font"), fontname, stylename, filename.GetFullName() ));
+        }
+    }
+}
+
+// try to make a font from the fontinfo.
+a2dFont* a2dFontMonkey::CreateFont( const a2dFontInfo& info, bool force )
+{
+    // todo implement search for alternatives, see a2dFontFreetype::CreateFont()
+    if ( info.GetType() == wxT("Monkey font") && !info.GetExtra().IsEmpty() )
+    {
+        a2dFontMonkey* font = new a2dFontMonkey( info.GetExtra(), 
+                info.GetSize(), info.GetAlignment() );
+        return font;
+    }
+    else
+        return NULL;
+}
+
+\endcode
+
+
+
+\section morethings More things to do.
+
+Now that we have a font class, with some a Createfont class does not mean, that
+the font can now be created in a general way. The applications, do not know of
+the existance of specific font classes. Therefore they will call a2dFont::CreateFont.
+To enable the creation of your font, you should add this method to
+- (stylebase.cpp) a2dFont* a2dFont::CreateFont( const a2dFontInfo& info );
+
+Also to be able to select the font using the font selection dialog, add your class to:
+- (stylebase.cpp) void a2dFont::GetInfoList( a2dFontInfoList& list );
+
+
+\section drawing Drawing of the font
+
+Add a specific monkey font drawing routines to the wxDrawer2D header:
+- (drawer2d.h) virtual void wxDrawer2D::DrawTextMonkey( const wxString& text, double x, double y ) { DrawTextGeneric( text, x, y, &wxDcDrawer::DrawCharMonkeyCb ); }
+- (drawer2d.h) virtual void wxDrawer2D::DrawCharMonkey( wxChar c  ) {  DrawCharUnknown( c ); }
+- (drawer2d.h) void wxDrawer2D::DrawCharMonkeyCb( wxChar c ) { DrawCharMonkey( c ); }
+
+The last line is a wrapper for the DrawChar function. It seems redundant, but Iso C++ does not
+allow anymore to call a virtual member directly.
+
+The font drawing will be invokated through DrawText. To let this know of the
+existance of the monkey font class, you should add this newly created method to:
+- (drawer2d.cpp) void wxDrawer2D::DrawText( const wxString& text, double x, double y );
+
+Now, at minimum, implement the font drawing in wxDcDrawer. 
+
+The drawing routines are seperated in two routines. The first parses the string and calls the
+second one to draw each character. The first is allready supplied, but might be overruled,
+to set text colours, etc.
+
+\code
+void wxDrawer2D::DrawTextMonkey( const wxString& text, double x, double y )
+{
+    // Set text colour.
+    ...
+    
+    // Call generic string parsing routine.
+    DrawTextGeneric( text, x, y, (void (wxDrawer2D::*)( wxChar )) &wxDcDrawer::DrawCharMonkeyCb );
+}
+\endcode
+
+The implementation of the character drawing routine can fully concentrate on drawing
+the character. The calling routine allready took care of performing all necessary affine
+transforms. The origin (0, 0) is set at the lower left bounding box of the character.
+Depending on the font, scaling to size should still be performed here.
+
+\code
+void wxDcDrawer::DrawCharMonkey( wxChar c )
+{
+    // Draw the character here.
+    a2dFontStroke* mkyfont = wxDynamicCast( m_currentfont.Get(), a2dFontMonkey );
+
+    // save context
+    a2dAffineMatrix oldaffine = GetTransform();
+
+    // scale character to size
+    a2dAffineMatrix affine;
+    affine.Scale( mkyfont->GetSize() );
+    SetTransForm( oldaffine * affine );
+
+    // do actual drawing here.
+
+    // restore context
+    SetTransForm( oldaffine );
+}
+\endcode
+
+So now finally the font should work.
+
+\par
+
+*/

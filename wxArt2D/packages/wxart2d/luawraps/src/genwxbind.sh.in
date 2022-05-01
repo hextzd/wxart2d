@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#WXLUA=${wxLua_PREFIX}
+
+echo Generating wxWidgets Binding
+@wxLua_EXE@ -e"rulesFilename=\"luawraps_rules.lua\"" $WXLUA/bindings/genwxbind.lua  
+echo Done luawraps
+

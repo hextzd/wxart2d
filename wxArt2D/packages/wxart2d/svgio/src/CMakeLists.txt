@@ -1,0 +1,20 @@
+IF( WXART2D_MAKE_SHARED )
+    ADD_DEFINITIONS ( -DA2DCANVASMAKINGDLL )
+#    ADD_DEFINITIONS ( -DA2DSVGIOMAKINGDLL )
+#    SET(BUILD_SHARED_LIBS = 1)
+ENDIF( WXART2D_MAKE_SHARED )
+
+SET( svgio_HEADERS
+        ${wxart2d_SOURCE_DIR}/include/wx/svgio/parssvg.h
+)
+
+ADD_LIBRARY_WXLIKE( wxart2d svgio
+        parssvg.cpp
+        ${svgio_HEADERS}
+)
+
+INSTALL( 
+    FILES ${svgio_HEADERS} 
+    DESTINATION include/wxart2d-${WXART2D_MAJOR_VERSION}.${WXART2D_MINOR_VERSION}/wx/svgio
+)
+INSTALL( TARGETS svgio DESTINATION lib )

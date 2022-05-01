@@ -1,0 +1,28 @@
+#
+# This module is provided as kbool_USE_FILE by kboolConfig.cmake.  It can
+# be included in a project to load the needed compiler and linker
+# settings to use kbool.
+#
+
+IF(NOT kbool_USE_FILE_INCLUDED)
+    SET(kbool_USE_FILE_INCLUDED 1)
+
+    # Add compiler flags needed to use kbool.
+    SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${kbool_REQUIRED_C_FLAGS}")
+    SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${kbool_REQUIRED_CXX_FLAGS}")
+
+    # Add include directories needed to use kbool.
+    INCLUDE_DIRECTORIES(${kbool_INCLUDE_DIRS})
+
+    # Add link directories needed to use kbool.
+    LINK_DIRECTORIES(${kbool_LIBRARY_DIRS})
+
+    FOREACH( flag ${kbool_FLAGS} )     
+        ADD_DEFINITIONS( ${flag} )
+    ENDFOREACH( flag )
+  
+    LINK_LIBRARIES(${kbool_LIBRARIES})
+  
+ENDIF(NOT kbool_USE_FILE_INCLUDED)
+
+

@@ -1,0 +1,127 @@
+# wxArt2DConfig.cmake was found in a (prefix/share/wxart2d) directory, all else relative to that.
+# wxArt2D install root is two levels higher.
+
+set( WXART2D_VERSION @WXART2D_VERSION@ )
+set( WXART2D_MAJOR_VERSION @WXART2D_MAJOR_VERSION@ )
+set( WXART2D_MINOR_VERSION @WXART2D_MINOR_VERSION@ )
+set( WXART2D_BUILD_VERSION @WXART2D_BUILD_VERSION@ )
+
+# where came wxDocview from
+SET( wxDocview_PREFIX  "@wxDocview_DIR_SHARE@/../.." )
+
+SET( WXART2D_FLAGS @WXART2D_FLAGS@ )
+SET( WXART2D_INCLUDE_DIRS_DEPENDS @WXART2D_INCLUDE_DIRS_DEPENDS@ )
+SET( WXART2D_LIBRARIES @WXART2D_LIBRARIES@ )
+
+IF (WXART2D_INSIDE_BUILD)
+    # this is configured to be used inside the build directory, when compiling from source.
+    # internal build uses the configured wxart2d.h from the binary tree.
+    SET( WXART2D_INCLUDE_DIRS @wxart2d_BINARY_DIR@/include  )
+    SET( WXART2D_INCLUDE_DIRS_CONFIG @WXART2D_INCLUDE_DIRS@ )
+    #convert relative to absolute
+    FOREACH( includedir ${WXART2D_INCLUDE_DIRS_CONFIG} )
+        SET( WXART2D_INCLUDE_DIRS ${WXART2D_INCLUDE_DIRS} "@wxart2d_SOURCE_DIR@/${includedir}" )
+    ENDFOREACH( includedir )
+ELSE (WXART2D_INSIDE_BUILD)
+    #convert relative to absolute
+    # USE wxart2d-${WXART2D_MAJOR_VERSION}.${WXART2D_MINOR_VERSION}
+    SET( WXART2D_INCLUDE_DIRS ${WXART2D_INCLUDE_DIRS} "${WXART2D_DIR_SHARE}/../../lib/wxart2d/include/@wxWidgets_SELECTED_CONFIG@" )
+    SET( WXART2D_INCLUDE_DIRS ${WXART2D_INCLUDE_DIRS} "${WXART2D_DIR_SHARE}/../../include/wxart2d-${WXART2D_MAJOR_VERSION}.${WXART2D_MINOR_VERSION}" )
+    SET( WXART2D_INCLUDE_DIRS ${WXART2D_INCLUDE_DIRS} "${WXART2D_DIR_SHARE}/../../include/wxart2d-${WXART2D_MAJOR_VERSION}.${WXART2D_MINOR_VERSION}/agg2/include" )
+ENDIF (WXART2D_INSIDE_BUILD)
+
+SET( WXART2D_LIBRARY_DIRS "${WXART2D_DIR_SHARE}/../../lib" )
+# now add the external full path directories
+SET( WXART2D_LIBRARY_DIRS ${WXART2D_LIBRARY_DIRS} @WXART2D_LIBRARY_DIRS_DEPENDS@ )
+
+SET( WXART2D_USE_FILE ${WXART2D_DIR_SHARE}/UsewxArt2D.cmake )
+SET( WXART2D_PREFIX  "${WXART2D_DIR_SHARE}/../.." )
+
+SET( wxWidgets_ROOT_DIR @wxWidgets_ROOT_DIR@ )
+SET( wxWidgets_INCLUDE_DIRS  @wxWidgets_INCLUDE_DIRS@ )
+SET( wxWidgets_LIBRARIES @wxWidgets_LIBRARIES@ )
+SET( wxWidgets_LIBRARY_DIRS @wxWidgets_LIBRARY_DIRS@ )  
+SET( wxWidgets_DEFINITIONS @wxWidgets_DEFINITIONS@ ) 
+SET( wxWidgets_CXX_FLAGS @wxWidgets_CXX_FLAGS@ )  
+SET( wxWidgets_RELEASE @wxWidgets_RELEASE@ )  
+SET( wxWidgets_RELEASE_NODOT @wxWidgets_RELEASE_NODOT@ )  
+SET( wxWidgets_PORT  @wxWidgets_PORT@ )  
+SET( wxWidgets_UNV  @wxWidgets_UNV@ )  
+SET( wxWidgets_UCD  @wxWidgets_UCD@ )  
+SET( wxWidgets_DBG  @wxWidgets_DBG@ )  
+SET( wxWidgets_USE_DEBUG @wxWidgets_USE_DEBUG@ )
+SET( wxWidgets_USE_UNICODE @wxWidgets_USE_UNICODE@ )
+SET( wxWidgets_USE_STATIC @wxWidgets_USE_STATIC@ )
+SET( wxWidgets_USE_UNIVERSAL @wxWidgets_USE_UNIVERSAL@ )
+SET( wxWidgets_FIND_STYLE @wxWidgets_FIND_STYLE@ )
+SET( wxWidgets_RC @wxWidgets_RC@ )
+SET( MSVC @MSVC@ )
+SET( WIN32GUI @WIN32GUI@ )  
+
+IF( ${wxWidgets_FIND_STYLE} STREQUAL "WIN32_STYLE_FIND" )
+    SET( WXART2D_OUTPUTLIBPREFIX wxart2d_${wxWidgets_PORT}${wxWidgets_UNV}${wxWidgets_RELEASE_NODOT}${wxWidgets_UCD}${wxWidgets_DBG}_ )
+    SET( WXART2D_OUTPUTLIBPOSTFIX "" )
+ENDIF( ${wxWidgets_FIND_STYLE} STREQUAL "WIN32_STYLE_FIND" )
+IF( ${wxWidgets_FIND_STYLE} STREQUAL "UNIX_STYLE_FIND" )
+    # how will output libraries be  prefixed
+    # without the "lib" and "a" 
+    SET( WXART2D_OUTPUTLIBPREFIX wxart2d_${wxWidgets_PORT}${wxWidgets_UNV}${wxWidgets_UCD}${wxWidgets_DBG}_ )
+    SET( WXART2D_OUTPUTLIBPOSTFIX "-${wxWidgets_RELEASE}" )      
+ENDIF( ${wxWidgets_FIND_STYLE} STREQUAL "UNIX_STYLE_FIND" )
+
+SET( WXART2D_LIBRARIES_WXLIKE @WXART2D_LIBRARIES_WXLIKE@ CACHE STRING "wxArt2D libraries wxlike" FORCE  )
+
+set( wxart2dwxlikelibs "" )
+FOREACH( lib ${WXART2D_LIBRARIES_WXLIKE} )     
+    set( wanted ${lib}  )
+    set( wxart2dwxlikelibs ${wxart2dwxlikelibs} ${wanted} )
+    FIND_LIBRARY( found_${wanted}
+      NAMES ${wanted}
+      PATHS
+      ${WXART2D_DIR}
+      NO_DEFAULT_PATH
+      PATH_SUFFIXES lib64 lib lib/Debug lib/Release
+    )
+    if ( found_${wanted} )
+        if(NOT wxArt2D_FIND_QUIETLY)
+            message( STATUS "wxArt2D library ${wanted} is found in ${found_${wanted}}" )
+        endif()
+    else ()
+        if(NOT wxArt2D_FIND_QUIETLY)
+            message( ERROR "wxArt2D library ${wanted} is not found in ${WXART2D_DIR}" )
+        endif()
+    endif ()
+    MARK_AS_ADVANCED( found_${wanted} )
+ENDFOREACH()
+# put them in front of all other libraries
+SET( WXART2D_LIBRARIES ${wxart2dwxlikelibs} ${WXART2D_LIBRARIES} )
+
+SET( WXART2D_USE_AGGDRAWER @WXART2D_USE_AGGDRAWER@ )
+SET( WXART2D_USE_CURVES @WXART2D_USE_CURVES@ )
+SET( WXART2D_USE_EDITOR @WXART2D_USE_EDITOR@ )
+SET( WXART2D_USE_CANEXTOBJ @WXART2D_USE_CANEXTOBJ@ )
+SET( WXART2D_USE_CANVAS @WXART2D_USE_CANVAS@ )
+SET( WXART2D_USE_ARTBASE @WXART2D_USE_ARTBASE@ )
+SET( WXART2D_USE_DOCVIEW @WXART2D_USE_DOCVIEW@ )
+SET( WXART2D_USE_SVGIO @WXART2D_USE_SVGIO@ )
+SET( WXART2D_USE_GDSIO @WXART2D_USE_GDSIO@ )
+SET( WXART2D_USE_KEYIO @WXART2D_USE_KEYIO@ )
+SET( WXART2D_USE_KBOOL @WXART2D_USE_KBOOL@ )
+SET( WXART2D_USE_XMLPARSE @WXART2D_USE_XMLPARSE@ )
+SET( WXART2D_USE_FREETYPE @WXART2D_USE_FREETYPE@ )
+SET( WXART2D_USE_LUA @WXART2D_USE_LUA@ )
+SET( LUAEXE @wxLua_LUAEXE@ )
+SET( wxLua_LUAEXE @wxLua_LUAEXE@ )
+SET( wxLua_ROOT_DIR @wxLua_ROOT_DIR@ )
+SET( wxLua_EXE @wxLua_EXE@ )
+
+#options that where set
+
+SET( WXART2D_FLAGS ${WXART2D_FLAGS} CACHE STRING "wxArt2D package flags" FORCE )
+SET( WXART2D_INCLUDE_DIRS_DEPENDS ${WXART2D_INCLUDE_DIRS_DEPENDS} CACHE STRING "wxArt2D dependency include paths" FORCE )
+SET( WXART2D_INCLUDE_DIRS ${WXART2D_INCLUDE_DIRS} CACHE STRING "wxArt2D package include paths" FORCE )
+SET( WXART2D_LIBRARY_DIRS ${WXART2D_LIBRARY_DIRS} CACHE STRING "wxArt2D package libs directory paths" FORCE )
+SET( WXART2D_LIBRARIES ${WXART2D_LIBRARIES} CACHE STRING "wxArt2D package libraries" FORCE )
+SET( WXART2D_PREFIX ${WXART2D_PREFIX} CACHE STRING "wxArt2D prefix" FORCE )
+SET( WXART2D_wxWidgets_SELECTED_CONFIG @wxWidgets_SELECTED_CONFIG@ CACHE STRING "the wxWidgets configuration used for this compilation of wxart2d"  FORCE )
+

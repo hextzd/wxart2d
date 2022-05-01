@@ -1,0 +1,222 @@
+# wxLuaConfig.cmake was found in a share/wxLua directory, all else relative to that.
+# wxLua install root is two levels higher.
+
+# this version is configured to be used inside the build directory, when compiling from source.
+# See wxLuaConfigOutBuild.cmake.in for what is done to be used for the installation of wxLua.
+
+if( ${wxWidgets_FIND_STYLE} STREQUAL "WIN32_STYLE_FIND" )
+    SET( wxLua_VERSION 2.8.12.3 )
+    SET( wxLua_MAJOR_VERSION 2 )
+    SET( wxLua_MINOR_VERSION 8 )
+    SET( wxLua_BUILD_VERSION 12 )
+else()    
+    if( ${wxWidgets_VERSION} VERSION_LESS "3.0.4") 
+      SET( wxLua_VERSION 2.8.12 )
+    else()
+      SET( wxLua_VERSION 2.8.12.3 )
+    endif()
+    SET( wxLua_MAJOR_VERSION 2 )
+    SET( wxLua_MINOR_VERSION 8 )
+    SET( wxLua_BUILD_VERSION 12 )
+    #SET( wxLua_VERSION 2.9 )
+    #SET( wxLua_MAJOR_VERSION 2 )
+    #SET( wxLua_MINOR_VERSION 9 )
+    #SET( wxLua_BUILD_VERSION 4 )
+endif()    
+    
+
+SET( wxLua_PREFIX  "@where_is_wxlua_root@" )
+SET( wxLua_ROOT_DIR "@where_is_wxlua_root@" )
+
+SET( wxLua_INCLUDE_DIRS ${wxLua_PREFIX}/modules/lua/include ${wxLua_PREFIX}/modules/lua-5.1/include ${wxLua_PREFIX}/modules/wxbind/setup ${wxLua_PREFIX}/modules )
+#SET( wxLua_INCLUDE_DIRS ${wxLua_PREFIX}/modules/lua/include ${wxLua_PREFIX}/modules/lua-5.2/src ${wxLua_PREFIX}/modules/wxbind/setup ${wxLua_PREFIX}/modules )
+
+# form the naming 
+IF( ${wxWidgets_FIND_STYLE} STREQUAL "WIN32_STYLE_FIND" )
+
+    set( wxLua_LIBRARIES "wxlua-wx${wxWidgets_RELEASE_NODOT}mswu${wxWidgets_DBG}-2.8.12.3" )
+    #set( wxLua_LIBRARIES "wxstedit-wx${wxWidgets_RELEASE_NODOT}mswu${wxWidgets_DBG}-1.6.0;wxlua-wx${wxWidgets_RELEASE_NODOT}mswu${wxWidgets_DBG}-2.8.12.3" )
+
+    if( MSVC OR MSVC_IDE OR MSVC60 OR MSVC70 OR MSVC71 OR MSVC80 )
+        set( s_wxCompiler "vc" )
+    endif( MSVC OR MSVC_IDE OR MSVC60 OR MSVC70 OR MSVC71 OR MSVC80 )
+    if( BORLAND )
+        set( s_wxCompiler "bcc" )
+    endif( BORLAND )
+    if( "${CMAKE_CXX_COMPILER}" MATCHES ".*wcl.*" )
+        set( s_wxCompiler "wat" )
+    endif( "${CMAKE_CXX_COMPILER}" MATCHES ".*wcl.*" )
+    if( MINGW )
+        set( s_wxCompiler "gcc" )
+    endif( MINGW )   
+
+    IF( wxWidgets_USE_STATIC )
+        SET( s_packLibraryDirs ${wxLua_PREFIX}/lib ${wxLua_PREFIX}/lib/${s_wxCompiler}_lib )
+    ELSE( wxWidgets_USE_STATIC )
+        SET( s_packLibraryDirs ${wxLua_PREFIX}/lib ${wxLua_PREFIX}/lib/${s_wxCompiler}_dll )
+    ENDIF( wxWidgets_USE_STATIC )    
+
+	if ( wxWidgets_RELEASE MATCHES "[0-2].[0-8].*" )
+		set( wxLua_LUAEXE "wxlua.exe" )               
+        SET( wxLua_OUTPUTLIBPREFIX wxlua_${wxWidgets_PORT}${wxWidgets_UNV}${wxWidgets_RELEASE_NODOT}${wxWidgets_UCD}${wxWidgets_DBG}_ )
+        SET( wxLua_OUTPUTLIBPOSTFIX "" )
+	else()
+		set( wxLua_LUAEXE "wxLua.exe" )               
+        SET( wxLua_OUTPUTLIBPREFIX "wxlua_" )
+        SET( wxLua_OUTPUTLIBPOSTFIX "-wx${wxWidgets_RELEASE_NODOT}${wxWidgets_PORT}${wxWidgets_UNV}${wxWidgets_UCD}${wxWidgets_DBG}-${wxLua_VERSION}" )      
+	endif()
+    
+ELSE( ${wxWidgets_FIND_STYLE} STREQUAL "WIN32_STYLE_FIND" )    
+
+    set( wxLua_LIBRARIES "" )
+
+    SET( s_packLibraryDirs "${wxLua_PREFIX}/lib" )        
+    if ( wxWidgets_RELEASE MATCHES "[0-2].[0-8].*" )
+        set( wxLua_LUAEXE "wxlua" )               
+        # how will output libraries be  prefixed
+        SET( wxLua_OUTPUTLIBPREFIX wxlua_${wxWidgets_PORT}${wxWidgets_UNV}${wxWidgets_UCD}${wxWidgets_DBG}_ )
+        SET( wxLua_OUTPUTLIBPOSTFIX "-${wxWidgets_RELEASE}" )      
+    else()
+        set( wxLua_LUAEXE "wxLua" )               
+        # how will output libraries be  prefixed
+        #SET( wxLua_OUTPUTLIBPREFIX wxlua_${wxWidgets_PORT}${wxWidgets_UNV}${wxWidgets_UCD}_ )
+        #SET( wxLua_OUTPUTLIBPOSTFIX "-${wxWidgets_RELEASE}" )      
+        SET( wxLua_OUTPUTLIBPREFIX "wxlua_" )
+        SET( wxLua_OUTPUTLIBPOSTFIX "-wx${wxWidgets_RELEASE_NODOT}${wxWidgets_PORT}${wxWidgets_UNV}${wxWidgets_UCD}${wxWidgets_DBG}-${wxLua_VERSION}" )      
+        # without the "lib" and ${wxWidgets_DBG} and "a" in e.g libwxlua_socket-wx29gtk2u-2.9.4.a
+        # SET( wxLua_OUTPUTLIBPOSTFIX "-wx${wxWidgets_RELEASE_NODOT}${wxWidgets_PORT}${wxWidgets_UNV}${wxWidgets_UCD}-${wxLua_VERSION}" )      
+        #SET( wxLua_OUTPUTLIBPOSTFIX "-${wxWidgets_PORT}${wxWidgets_UNV}${wxWidgets_UCD}-${wxLua_VERSION}" )      
+    endif()
+ENDIF( ${wxWidgets_FIND_STYLE} STREQUAL "WIN32_STYLE_FIND" ) 
+    
+SET( wxLua_LIBRARY_DIRS "${s_packLibraryDirs}" )
+
+SET( wxLua_USE_FILE UsewxLua.cmake )
+
+if ( wxWidgets_RELEASE MATCHES "[0-2].[0-8].*" )
+	if(WIN32)
+	    set( wxLua_LIBRARIES_WXLIKE "wxlua;wxluadebug;wxluasocket;wxbindmedia;wxbindaui;wxbindstc;wxbindxrc;wxbindhtml;wxbindadv;wxbindxml;wxbindnet;wxbindcore;wxbindbase" )
+	else(WIN32)
+	    set( wxLua_LIBRARIES_WXLIKE "wxlua;wxluadebug;wxluasocket;wxbindaui;wxbindstc;wxbindxrc;wxbindhtml;wxbindadv;wxbindxml;wxbindnet;wxbindcore;wxbindbase" )
+	endif(WIN32)
+else()
+	if(WIN32)
+	    #set( wxLua_LIBRARIES_WXLIKE "wxlua;wxluadebug;wxbindmedia;wxbindaui;wxbindstc;wxbindxrc;wxbindhtml;wxbindadv;wxbindxml;wxbindnet;wxbindcore;wxbindbase" )
+	    #set( wxLua_LIBRARIES_WXLIKE "bind;debug;socket;lua51" )
+	    set( wxLua_LIBRARIES_WXLIKE "bind;debugger;debug;dummy;lua51" )
+	else(WIN32)
+	    set( wxLua_LIBRARIES_WXLIKE "bind;debugger;debug;dummy;lua51" )
+	endif(WIN32)
+endif()
+
+#options that where set
+
+SET( wxWidgets_ROOT_DIR @wxWidgets_ROOT_DIR@ )
+SET( wxWidgets_RELEASE @wxWidgets_RELEASE@ )  
+SET( wxWidgets_RELEASE_NODOT @wxWidgets_RELEASE_NODOT@ )  
+SET( wxWidgets_PORT  @wxWidgets_PORT@ )  
+SET( wxWidgets_UNV  @wxWidgets_UNV@ )  
+SET( wxWidgets_UCD  @wxWidgets_UCD@ )  
+SET( wxWidgets_DBG  @wxWidgets_DBG@ )  
+SET( wxWidgets_USE_DEBUG @wxWidgets_USE_DEBUG@ )
+SET( wxWidgets_USE_UNICODE @wxWidgets_USE_UNICODE@ )
+SET( wxWidgets_USE_STATIC @wxWidgets_USE_STATIC@ )
+SET( wxWidgets_USE_UNIVERSAL @wxWidgets_USE_UNIVERSAL@ )
+SET( wxWidgets_FIND_STYLE @wxWidgets_FIND_STYLE@ )
+SET( MSVC @MSVC@ )
+SET( WIN32GUI @WIN32GUI@ )  
+ 
+find_program( wxLua_EXE 
+    NAMES ${wxLua_LUAEXE}
+    PATHS 
+        ${wxLua_PREFIX}
+        ${CMAKE_INSTALL_PREFIX}
+    NO_DEFAULT_PATH
+    PATH_SUFFIXES 
+        bin 
+        bin/Debug
+        bin/Release		
+        bin/vcud_lib 
+        bin/vcud_dll 
+        bin/vcu_lib 
+        bin/vcu_dll 
+        bin/vc_lib 
+        bin/vc_dll 
+        bin/gccud_lib
+        bin/gccud_dll
+        bin/gccu_lib
+        bin/gccu_dll
+        bin/gcc_lib
+        bin/gcc_dll
+)
+
+if ( wxLua_EXE )       
+    if(NOT wxLua_FIND_QUIETLY)
+        message( STATUS "wxLua executable ${wxLua_LUAEXE} is found in ${wxLua_PREFIX}" )
+    endif()
+else ()
+    if(NOT wxLua_FIND_QUIETLY)
+        message( ERROR "wxLua executable ${wxLua_LUAEXE} is not found in ${wxLua_PREFIX}" )
+    endif()
+endif ()
+ 
+FOREACH( lib ${wxLua_LIBRARIES_WXLIKE} )    
+    if ( ${lib} STREQUAL dummy )
+        # need to skip _ here
+        set( wanted wxlua${wxLua_OUTPUTLIBPOSTFIX} )
+    else ()
+    set( wanted ${wxLua_OUTPUTLIBPREFIX}${lib}${wxLua_OUTPUTLIBPOSTFIX} )
+    endif()    
+    set( wxluawxlikelibs ${wxluawxlikelibs} ${wanted} )
+    # check if available or not
+    FIND_LIBRARY( found_${wanted}
+      NAMES ${wanted}
+      PATHS 
+        ${wxLua_LIBRARY_DIRS} 
+        ${wxLua_PREFIX}
+        ${CMAKE_INSTALL_PREFIX}
+      NO_DEFAULT_PATH
+      PATH_SUFFIXES lib64 lib lib/Debug lib/Release
+    )
+    if ( found_${wanted} )       
+        if(NOT wxLua_FIND_QUIETLY)
+            message( STATUS "wxLua library ${wanted} is found in ${found_${wanted}}" )
+        endif()
+    else ()
+        if(NOT wxLua_FIND_QUIETLY)
+            message( ERROR "wxLua library ${wanted} is not found in ${wxLua_PREFIX} or ${CMAKE_INSTALL_PREFIX}" )
+        endif()
+    endif ()
+    MARK_AS_ADVANCED( found_${wanted} )
+ENDFOREACH()  
+# put them in front of all other libraries
+SET( wxLua_LIBRARIES ${wxluawxlikelibs} ${wxLua_LIBRARIES} )
+
+IF(NOT wxLua_FIND_QUIETLY)
+    MESSAGE ( STATUS "wxLua_DIR => ${wxLua_DIR}" )
+    MESSAGE ( STATUS "wxLua_PREFIX => ${wxLua_PREFIX}" )
+    MESSAGE ( STATUS "wxLua_INCLUDE_DIRS => ${wxLua_INCLUDE_DIRS}" )
+    MESSAGE ( STATUS "wxLua_LIBRARIES => ${wxLua_LIBRARIES}" )
+    MESSAGE ( STATUS "wxLua_LIBRARY_DIRS => ${wxLua_LIBRARY_DIRS}" )
+    MESSAGE ( STATUS "wxLua_LIBRARIES_WXLIKE => ${wxLua_LIBRARIES_WXLIKE}" )
+ENDIF(NOT wxLua_FIND_QUIETLY)
+
+SET( wxLua_INCLUDE_DIRS ${wxLua_INCLUDE_DIRS} CACHE STRING "wxLua package include paths" FORCE )
+SET( wxLua_LIBRARY_DIRS ${wxLua_LIBRARY_DIRS} CACHE STRING "wxLua package libs directory paths" FORCE )
+SET( wxLua_LIBRARIES ${wxLua_LIBRARIES} CACHE STRING "wxLua package libraries" FORCE )
+SET( wxLua_LIBRARIES_WXLIKE ${wxLua_LIBRARIES_WXLIKE} CACHE STRING "wxLua libraries wxlike" FORCE  )
+SET( wxLua_PREFIX ${wxLua_PREFIX} CACHE STRING "wxLua prefix" FORCE )
+SET( wxLua_ROOT_DIR ${wxLua_ROOT_DIR} CACHE STRING "wxLua_ROOT_DIR" FORCE )
+SET( wxLua_wxWidgets_SELECTED_CONFIG @wxWidgets_SELECTED_CONFIG@ CACHE STRING "the wxWidgets configuration used for this compilation of wxLua"  FORCE )
+
+MARK_AS_ADVANCED( 
+    wxLua_INCLUDE_DIRS 
+    wxLua_LIBRARY_DIRS 
+    wxLua_LIBRARIES 
+    wxLua_LIBRARIES_WXLIKE 
+    wxLua_PREFIX
+    wxLua_wxWidgets_SELECTED_CONFIG
+)
+
+
+

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+WXLUA=${wxLua_ROOT_DIR}
+
+echo Generating wxWidgets Binding
+@wxLua_EXE@ -e"rulesFilename=\"thumbo_rules.lua\"" $WXLUA/bindings/genwxbind.lua  
+echo Done luawraps
+

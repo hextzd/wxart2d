@@ -1,0 +1,9 @@
+s/$\\{DOCVIEW_LIBRARIES\\}/$\\{DOCVIEW_LIBRARIES\\}/
+s/ WXART2D_/ WXDOCVIEW_/
+s/wxArt2D/wxDocview/
+s/WXART2D/DOCVIEW/
+s/wxart2d/wxdocview/
+s/general\/include/wx\/general/
+s/docview\/include/wx\/docview/
+s/xmlparse\/include/wx\/xmlparse/
+

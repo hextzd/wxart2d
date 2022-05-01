@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<cvg classname="a2dObject">
+    <title>layersettings</title>
+    <desc>description</desc>
+    <o classname="a2dLayers" id="6816496974353195653" hitflags=" visible">
+        <o classname="a2dLayerInfo" name="Layer 0" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="0" outmap="0" order="0" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#269430">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#EEB329" colour2="#E67754" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat00.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 1" layer="1" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="1" outmap="1" order="1" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#04C9ED">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#CD7550" colour2="#373FA7" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat01.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+    </o>
+</cvg>

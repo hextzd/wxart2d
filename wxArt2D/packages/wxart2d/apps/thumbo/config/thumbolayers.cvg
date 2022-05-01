@@ -1,0 +1,2808 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<cvg classname="a2dObject">
+    <title>layersettings</title>
+    <desc>description</desc>
+    <o classname="a2dLayers" id="6816496974353195653" hitflags=" visible">
+        <o classname="a2dLayerInfo" name="Layer 0" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="0" outmap="0" order="0" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#269430">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#EEB329" colour2="#E67754" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat00.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 1" layer="1" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="1" outmap="1" order="1" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#04C9ED">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#CD7550" colour2="#373FA7" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat01.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 2" layer="2" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="2" outmap="2" order="2" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#95BE26">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#856601" colour2="#995C7E" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat02.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 3" layer="3" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="3" outmap="3" order="3" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#645B6C">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#53A0AE" colour2="#278871" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat03.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 4" layer="4" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="4" outmap="4" order="4" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#936B50">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#11890D" colour2="#BD01F2" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat04.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 5" layer="5" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="5" outmap="5" order="5" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#F596D4">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#5B9B5C" colour2="#930A3B" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat05.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 6" layer="6" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="6" outmap="6" order="6" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#5CF17C">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#579FE1" colour2="#106159" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat06.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 7" layer="7" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="7" outmap="7" order="7" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#B70E2A">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#862240" colour2="#D63496" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat07.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 8" layer="8" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="8" outmap="8" order="8" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#47F609">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#F07D8E" colour2="#71146E" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat08.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 9" layer="9" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="9" outmap="9" order="9" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#92D70A">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#8ED0B1" colour2="#8C9CD6" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat09.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 10" layer="10" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="10" outmap="10" order="10" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#453274">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#F2B5B4" colour2="#CACB93" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat10.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 11" layer="11" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="11" outmap="11" order="11" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#140718">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#7F071F" colour2="#62C243" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat11.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 12" layer="12" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="12" outmap="12" order="12" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#6BF1AE">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#C322B1" colour2="#16002B" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat12.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 13" layer="13" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="13" outmap="13" order="13" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#81035E">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#02114F" colour2="#11526E" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat13.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 14" layer="14" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="14" outmap="14" order="14" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#FA86B1">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#DD5021" colour2="#86AC72" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat14.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 15" layer="15" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="15" outmap="15" order="15" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#DF435F">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#DB7780" colour2="#D9A1E3" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat15.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 16" layer="16" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="16" outmap="16" order="16" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#4A3648">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#CD13D5" colour2="#2E5B6A" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat16.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 17" layer="17" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="17" outmap="17" order="17" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#098A83">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#D49D4C" colour2="#DC4F8A" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat17.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 18" layer="18" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="18" outmap="18" order="18" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#83DC2E">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#D4D9C0" colour2="#E7A385" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat18.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 19" layer="19" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="19" outmap="19" order="19" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#646E55">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#62E666" colour2="#AA9118" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat19.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 20" layer="20" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="20" outmap="20" order="20" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#5DE82A">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#35A299" colour2="#FC02DD" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat20.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 21" layer="21" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="21" outmap="21" order="21" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#0D5687">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#A1ACD5" colour2="#1B830A" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat21.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 22" layer="22" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="22" outmap="22" order="22" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#09A91A">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#5574CF" colour2="#B38BFA" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat22.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 23" layer="23" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="23" outmap="23" order="23" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#BE0361">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#4DC03C" colour2="#025680" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat23.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 24" layer="24" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="24" outmap="24" order="24" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#526968">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#2DA593" colour2="#3F2B77" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat24.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 25" layer="25" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="25" outmap="25" order="25" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#E01F29">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#0EFA36" colour2="#42EE06" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat25.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 26" layer="26" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="26" outmap="26" order="26" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#9C31C4">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#98E945" colour2="#64FA00" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat26.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 27" layer="27" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="27" outmap="27" order="27" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#5EC851">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#5F54C1" colour2="#6A1C03" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat27.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 28" layer="28" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="28" outmap="28" order="28" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#97EF4F">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#08F38E" colour2="#3CC828" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat28.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 29" layer="29" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="29" outmap="29" order="29" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#6F736D">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#92DE4C" colour2="#A2F825" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat29.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 30" layer="30" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="30" outmap="30" order="30" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#AFE03C">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#CE1C01" colour2="#2CF905" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat30.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 31" layer="31" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="31" outmap="31" order="31" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#ABB0A7">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#D251C7" colour2="#0F89C1" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat31.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 32" layer="32" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="32" outmap="32" order="32" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#69C6B4">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#A47D34" colour2="#87A9B8" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat32.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 33" layer="33" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="33" outmap="33" order="33" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#8D59F4">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#AB437A" colour2="#5257A4" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat33.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 34" layer="34" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="34" outmap="34" order="34" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#89C580">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#4B2784" colour2="#1AAD72" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat34.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 35" layer="35" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="35" outmap="35" order="35" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#F936A5">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#5817E7" colour2="#C553B1" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat35.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 36" layer="36" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="36" outmap="36" order="36" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#091A68">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#F951C1" colour2="#675C60" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat36.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 37" layer="37" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="37" outmap="37" order="37" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#E1F947">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#115050" colour2="#C6614A" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat37.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 38" layer="38" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="38" outmap="38" order="38" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#7F46F9">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#96F1C5" colour2="#75368C" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat38.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 39" layer="39" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="39" outmap="39" order="39" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#81119C">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#2A1800" colour2="#5250E3" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat39.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 40" layer="40" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="40" outmap="40" order="40" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#EB1782">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#FB82C9" colour2="#456A34" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat40.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 41" layer="41" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="41" outmap="41" order="41" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#529CB9">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#2EF6D4" colour2="#E84BAD" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat41.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 42" layer="42" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="42" outmap="42" order="42" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#3D452A">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#F53088" colour2="#19B2FD" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat42.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 43" layer="43" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="43" outmap="43" order="43" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#82955D">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#AAAA60" colour2="#F2DC7C" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat43.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 44" layer="44" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="44" outmap="44" order="44" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#AE80EF">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#986779" colour2="#0CF731" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat44.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 45" layer="45" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="45" outmap="45" order="45" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#552F23">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#62360F" colour2="#E60703" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat45.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 46" layer="46" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="46" outmap="46" order="46" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#E9000F">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#659213" colour2="#D36B00" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat46.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 47" layer="47" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="47" outmap="47" order="47" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#1A6E2C">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#4D77A1" colour2="#CC8E6E" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat47.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 48" layer="48" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="48" outmap="48" order="48" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#9963EB">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#3DE889" colour2="#D62EF0" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat48.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 49" layer="49" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="49" outmap="49" order="49" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#229BE8">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#5F646A" colour2="#8C68AD" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat49.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 50" layer="50" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="50" outmap="50" order="50" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#6A7263">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#A05D4F" colour2="#8C3468" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat50.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 51" layer="51" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="51" outmap="51" order="51" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#350626">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#54E5F1" colour2="#251002" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat51.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 52" layer="52" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="52" outmap="52" order="52" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#6901B2">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#789448" colour2="#F9A6B9" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat52.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 53" layer="53" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="53" outmap="53" order="53" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#FA71B9">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#1D3498" colour2="#654408" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat53.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 54" layer="54" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="54" outmap="54" order="54" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#7BE62C">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#29E355" colour2="#4817B2" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat54.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 55" layer="55" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="55" outmap="55" order="55" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#F26A84">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#35B5D4" colour2="#F80D23" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat55.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 56" layer="56" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="56" outmap="56" order="56" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#48B847">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#3706CC" colour2="#933D25" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat56.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 57" layer="57" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="57" outmap="57" order="57" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#BBA671">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#ADD8C0" colour2="#781772" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat57.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 58" layer="58" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="58" outmap="58" order="58" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#115996">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#ED34A2" colour2="#B82F35" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat58.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 59" layer="59" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="59" outmap="59" order="59" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#F4F39B">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#26353C" colour2="#1F1C7F" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat59.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 60" layer="60" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="60" outmap="60" order="60" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#87027B">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#274CEC" colour2="#BE65CE" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat00.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 61" layer="61" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="61" outmap="61" order="61" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#D56666">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#8CE662" colour2="#EC071B" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat01.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 62" layer="62" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="62" outmap="62" order="62" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#9944C4">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#7F9590" colour2="#97F79D" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat02.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 63" layer="63" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="63" outmap="63" order="63" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#F763FD">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#9A11CE" colour2="#27A59B" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat03.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 64" layer="64" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="64" outmap="64" order="64" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#32101C">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#C62AD1" colour2="#C67389" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat04.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 65" layer="65" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="65" outmap="65" order="65" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#CD95C5">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#9179D0" colour2="#43A9B4" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat05.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 66" layer="66" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="66" outmap="66" order="66" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#87A184">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#67F2A1" colour2="#2CBFEE" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat06.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 67" layer="67" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="67" outmap="67" order="67" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#21DBB8">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#2D7B6D" colour2="#665AAD" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat07.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 68" layer="68" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="68" outmap="68" order="68" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#DE7671">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#B57EE4" colour2="#22015F" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat08.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 69" layer="69" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="69" outmap="69" order="69" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#83BD2E">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#3310D7" colour2="#858668" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat09.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 70" layer="70" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="70" outmap="70" order="70" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#E4A668">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#BCD92B" colour2="#8FB320" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat10.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 71" layer="71" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="71" outmap="71" order="71" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#667606">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#E3669B" colour2="#71A986" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat11.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 72" layer="72" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="72" outmap="72" order="72" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#ED48E4">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#ACC801" colour2="#D1D7D7" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat12.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 73" layer="73" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="73" outmap="73" order="73" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#466D0A">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#31C128" colour2="#319F52" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat13.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 74" layer="74" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="74" outmap="74" order="74" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#37F376">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#5152C8" colour2="#EF107B" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat14.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 75" layer="75" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="75" outmap="75" order="75" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#83A15C">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#229913" colour2="#179B52" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat15.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 76" layer="76" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="76" outmap="76" order="76" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#95EB1B">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#DD4D75" colour2="#DA7FFC" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat16.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 77" layer="77" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="77" outmap="77" order="77" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#0C820B">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#74552F" colour2="#180DAA" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat17.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 78" layer="78" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="78" outmap="78" order="78" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#5CE1BF">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#A91457" colour2="#4E04F4" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat18.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 79" layer="79" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="79" outmap="79" order="79" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#CE3949">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#398BF9" colour2="#784D76" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat19.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 80" layer="80" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="80" outmap="80" order="80" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#F25844">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#FD8EE2" colour2="#64E155" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat20.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 81" layer="81" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="81" outmap="81" order="81" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#BA7A47">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#0F953B" colour2="#10F631" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat21.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 82" layer="82" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="82" outmap="82" order="82" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#F58814">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#3554B1" colour2="#0AD199" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat22.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 83" layer="83" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="83" outmap="83" order="83" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#6C83FC">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#0F8916" colour2="#47C45F" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat23.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 84" layer="84" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="84" outmap="84" order="84" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#7AC3E4">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#CBB87C" colour2="#583281" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat24.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 85" layer="85" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="85" outmap="85" order="85" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#E72D2D">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#55B72D" colour2="#AAE1C7" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat25.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 86" layer="86" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="86" outmap="86" order="86" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#DF2F39">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#C9CF1C" colour2="#BF9538" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat26.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 87" layer="87" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="87" outmap="87" order="87" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#3CECEA">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#A6406D" colour2="#8B3864" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat27.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 88" layer="88" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="88" outmap="88" order="88" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#DA8FF0">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#4BB6B0" colour2="#DC5E8F" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat28.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 89" layer="89" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="89" outmap="89" order="89" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#0030E5">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#DE01D1" colour2="#C9B4C7" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat29.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 90" layer="90" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="90" outmap="90" order="90" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#0BD6CC">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#FD396F" colour2="#DF7680" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat30.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 91" layer="91" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="91" outmap="91" order="91" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#E4B875">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#0D23C5" colour2="#2A62C5" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat31.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 92" layer="92" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="92" outmap="92" order="92" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#0B806A">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#8C85C9" colour2="#B468D0" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat32.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 93" layer="93" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="93" outmap="93" order="93" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#223779">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#65922D" colour2="#475E34" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat33.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 94" layer="94" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="94" outmap="94" order="94" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#A2683C">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#50B904" colour2="#308098" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat34.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 95" layer="95" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="95" outmap="95" order="95" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#7A7DE9">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#73BB55" colour2="#933DC4" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat35.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 96" layer="96" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="96" outmap="96" order="96" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#26F450">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#4A7E84" colour2="#C1E12C" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat36.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 97" layer="97" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="97" outmap="97" order="97" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#CA9420">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#788796" colour2="#8D7C2F" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat37.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 98" layer="98" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="98" outmap="98" order="98" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#AE5EEC">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#B9957D" colour2="#FCF498" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat38.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 99" layer="99" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="99" outmap="99" order="99" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#05AAEF">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#187719" colour2="#B378DB" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat39.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 100" layer="100" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="100" outmap="100" order="100" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#154144">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#0C3829" colour2="#BCC2BF" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat40.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 101" layer="101" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="101" outmap="101" order="101" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#81651F">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#C14441" colour2="#5F0DD4" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat41.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 102" layer="102" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="102" outmap="102" order="102" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#F16016">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#ADC858" colour2="#015EA7" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat42.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 103" layer="103" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="103" outmap="103" order="103" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#7BF58F">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#8ADB3C" colour2="#95373E" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat43.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 104" layer="104" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="104" outmap="104" order="104" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#ABD583">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#3AA72D" colour2="#6601DE" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat44.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 105" layer="105" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="105" outmap="105" order="105" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#8853B0">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#F52AC3" colour2="#8E4EF0" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat45.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 106" layer="106" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="106" outmap="106" order="106" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#5C9B51">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#FC8864" colour2="#BF2B61" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat46.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 107" layer="107" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="107" outmap="107" order="107" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#66CDF1">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#1AD5F4" colour2="#EE6265" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat47.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 108" layer="108" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="108" outmap="108" order="108" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#F5588C">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#C72AF1" colour2="#261C1B" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat48.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 109" layer="109" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="109" outmap="109" order="109" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#FBA447">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#37826B" colour2="#F5079D" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat49.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 110" layer="110" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="110" outmap="110" order="110" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#D26C72">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#CA8718" colour2="#79073A" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat50.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 111" layer="111" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="111" outmap="111" order="111" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#D4BE17">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#04FB39" colour2="#D3F409" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat51.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 112" layer="112" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="112" outmap="112" order="112" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#B36246">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#DA2896" colour2="#98F983" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat52.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 113" layer="113" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="113" outmap="113" order="113" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#416A9B">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#DEF3E8" colour2="#7A5F63" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat53.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 114" layer="114" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="114" outmap="114" order="114" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#9D0EAE">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#E50CE9" colour2="#4CEA63" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat54.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 115" layer="115" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="115" outmap="115" order="115" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#BC148B">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#FA71B1" colour2="#EED636" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat55.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 116" layer="116" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="116" outmap="116" order="116" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#7DF8E6">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#18D362" colour2="#C726C4" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat56.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 117" layer="117" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="117" outmap="117" order="117" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#2489F0">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#8E33FA" colour2="#5454B7" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat57.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 118" layer="118" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="118" outmap="118" order="118" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#26F085">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#CC717B" colour2="#C6E807" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat58.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 119" layer="119" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="119" outmap="119" order="119" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#735368">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#D96072" colour2="#8254DC" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat59.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 120" layer="120" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="120" outmap="120" order="120" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#A67A52">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#FCF8E9" colour2="#902249" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat00.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 121" layer="121" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="121" outmap="121" order="121" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#A97E03">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#8040E1" colour2="#7920A6" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat01.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 122" layer="122" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="122" outmap="122" order="122" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#836492">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#B06DEE" colour2="#87AE55" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat02.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 123" layer="123" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="123" outmap="123" order="123" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#8310A1">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#E596A1" colour2="#601288" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat03.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 124" layer="124" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="124" outmap="124" order="124" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#6A164E">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#091E65" colour2="#208E04" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat04.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 125" layer="125" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="125" outmap="125" order="125" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#D079DD">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#E7020B" colour2="#5B8359" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat05.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 126" layer="126" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="126" outmap="126" order="126" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#672CBF">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#8F7C1A" colour2="#06FD42" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat06.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 127" layer="127" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="127" outmap="127" order="127" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#50B3F2">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#AD4CC5" colour2="#416D9C" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat07.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 128" layer="128" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="128" outmap="128" order="128" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#55895F">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#C90831" colour2="#E0EA10" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat08.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 129" layer="129" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="129" outmap="129" order="129" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#58D040">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#6281DB" colour2="#D85351" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat09.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 130" layer="130" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="130" outmap="130" order="130" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#CACCE0">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#08E3E7" colour2="#42CC55" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat10.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 131" layer="131" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="131" outmap="131" order="131" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#DFA363">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#A299CE" colour2="#B517DA" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat11.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 132" layer="132" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="132" outmap="132" order="132" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#8E455B">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#F9E725" colour2="#D0D6DB" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat12.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 133" layer="133" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="133" outmap="133" order="133" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#CF5FAF">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#488116" colour2="#894A2F" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat13.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 134" layer="134" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="134" outmap="134" order="134" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#28083E">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#B4BCB8" colour2="#7A6A7B" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat14.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 135" layer="135" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="135" outmap="135" order="135" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#5E70B0">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#B8B08F" colour2="#01F576" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat15.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 136" layer="136" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="136" outmap="136" order="136" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#F193D6">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#8E3DAA" colour2="#9772DC" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat16.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 137" layer="137" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="137" outmap="137" order="137" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#FAC3F6">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#DFCD89" colour2="#574CA2" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat17.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 138" layer="138" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="138" outmap="138" order="138" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#826118">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#DC47F2" colour2="#7D6E46" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat18.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 139" layer="139" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="139" outmap="139" order="139" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#8867C4">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#124BCD" colour2="#01167C" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat19.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 140" layer="140" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="140" outmap="140" order="140" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#91F04C">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#BF9E26" colour2="#54C5A6" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat20.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 141" layer="141" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="141" outmap="141" order="141" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#CA1718">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#3CF9C3" colour2="#875A79" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat21.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 142" layer="142" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="142" outmap="142" order="142" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#0623BA">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#4C2CAE" colour2="#EAB27B" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat22.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 143" layer="143" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="143" outmap="143" order="143" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#93503E">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#DD7788" colour2="#B7A8D5" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat23.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 144" layer="144" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="144" outmap="144" order="144" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#A1561D">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#40A3C0" colour2="#7BD86B" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat24.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 145" layer="145" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="145" outmap="145" order="145" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#E71B6B">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#D3E869" colour2="#0C496E" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat25.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 146" layer="146" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="146" outmap="146" order="146" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#79B810">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#ECD695" colour2="#D11C4F" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat26.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 147" layer="147" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="147" outmap="147" order="147" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#E09048">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#C921AD" colour2="#5CEBBB" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat27.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 148" layer="148" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="148" outmap="148" order="148" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#506F8C">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#61F809" colour2="#C274A1" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat28.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 149" layer="149" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="149" outmap="149" order="149" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#446829">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#95CDBB" colour2="#6755AF" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat29.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 150" layer="150" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="150" outmap="150" order="150" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#65E23F">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#3488F2" colour2="#109259" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat30.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 151" layer="151" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="151" outmap="151" order="151" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#FD9210">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#CC81D0" colour2="#9AE4CA" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat31.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 152" layer="152" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="152" outmap="152" order="152" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#A69071">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#87C990" colour2="#6710E3" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat32.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 153" layer="153" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="153" outmap="153" order="153" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#83B9D4">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#790A38" colour2="#E9F49B" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat33.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 154" layer="154" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="154" outmap="154" order="154" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#268C7A">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#DC470F" colour2="#E8D574" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat34.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 155" layer="155" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="155" outmap="155" order="155" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#3099A9">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#DAF11C" colour2="#FCD3A2" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat35.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 156" layer="156" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="156" outmap="156" order="156" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#D96C04">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#8ED8E8" colour2="#CC02C1" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat36.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 157" layer="157" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="157" outmap="157" order="157" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#ABABD9">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#6089A0" colour2="#81C3D8" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat37.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 158" layer="158" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="158" outmap="158" order="158" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#ADB95A">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#0062BD" colour2="#277DA8" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat38.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 159" layer="159" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="159" outmap="159" order="159" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#20E7E2">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#542A16" colour2="#005D2B" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat39.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 160" layer="160" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="160" outmap="160" order="160" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#3A617E">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#891926" colour2="#CC65AD" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat40.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 161" layer="161" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="161" outmap="161" order="161" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#092CF1">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#562477" colour2="#F5013E" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat41.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 162" layer="162" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="162" outmap="162" order="162" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#4985ED">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#02B859" colour2="#37F257" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat42.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 163" layer="163" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="163" outmap="163" order="163" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#ED74E8">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#A1607F" colour2="#E8226E" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat43.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 164" layer="164" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="164" outmap="164" order="164" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#1B54DC">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#9F4962" colour2="#B6E093" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat44.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 165" layer="165" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="165" outmap="165" order="165" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#A50688">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#D77F30" colour2="#E25F82" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat45.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 166" layer="166" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="166" outmap="166" order="166" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#347800">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#863BDF" colour2="#ADAFBE" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat46.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 167" layer="167" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="167" outmap="167" order="167" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#3BEC29">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#D180C9" colour2="#DCEC44" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat47.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 168" layer="168" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="168" outmap="168" order="168" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#F2D780">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#366C46" colour2="#48A36C" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat48.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 169" layer="169" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="169" outmap="169" order="169" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#4D9DA7">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#56F122" colour2="#08DD67" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat49.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 170" layer="170" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="170" outmap="170" order="170" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#253291">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#B80AB8" colour2="#A67512" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat50.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 171" layer="171" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="171" outmap="171" order="171" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#476447">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#C9CD6B" colour2="#43268A" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat51.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 172" layer="172" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="172" outmap="172" order="172" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#0FE508">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#4C922D" colour2="#94D343" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat52.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 173" layer="173" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="173" outmap="173" order="173" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#6551BE">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#902083" colour2="#70403F" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat53.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 174" layer="174" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="174" outmap="174" order="174" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#C9D512">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#20C697" colour2="#34E52B" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat54.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 175" layer="175" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="175" outmap="175" order="175" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#EE59A9">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#BB19A3" colour2="#EC9042" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat55.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 176" layer="176" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="176" outmap="176" order="176" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#E38D11">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#45BFDE" colour2="#5FD00C" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat56.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 177" layer="177" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="177" outmap="177" order="177" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#AA9FC5">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#FA8475" colour2="#27AA72" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat57.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 178" layer="178" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="178" outmap="178" order="178" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#530A74">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#701B03" colour2="#951F35" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat58.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 179" layer="179" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="179" outmap="179" order="179" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#9B7773">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#6F0600" colour2="#3C384A" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat59.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 180" layer="180" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="180" outmap="180" order="180" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#B2F84E">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#E18165" colour2="#8F6DBC" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat00.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 181" layer="181" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="181" outmap="181" order="181" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#2296FA">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#C4D969" colour2="#9968EA" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat01.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 182" layer="182" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="182" outmap="182" order="182" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#E3097E">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#6A5D2B" colour2="#4FC139" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat02.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 183" layer="183" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="183" outmap="183" order="183" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#C8C747">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#497408" colour2="#717718" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat03.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 184" layer="184" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="184" outmap="184" order="184" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#406D88">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#C8F51E" colour2="#6A8DFA" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat04.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 185" layer="185" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="185" outmap="185" order="185" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#1872E8">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#BA77DD" colour2="#AF1819" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat05.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 186" layer="186" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="186" outmap="186" order="186" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#419F80">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#454564" colour2="#C91BE5" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat06.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 187" layer="187" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="187" outmap="187" order="187" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#4C9FDF">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#507B83" colour2="#A5DF1A" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat07.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 188" layer="188" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="188" outmap="188" order="188" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#773F0E">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#3CC165" colour2="#504BF3" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat08.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 189" layer="189" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="189" outmap="189" order="189" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#BF33B0">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#A9A1DC" colour2="#B33C72" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat09.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 190" layer="190" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="190" outmap="190" order="190" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#5E84F7">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#BC7506" colour2="#AEB8A2" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat10.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 191" layer="191" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="191" outmap="191" order="191" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#161FCC">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#4820BB" colour2="#893823" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat11.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 192" layer="192" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="192" outmap="192" order="192" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#B29F14">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#74CD1B" colour2="#7E1880" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat12.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 193" layer="193" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="193" outmap="193" order="193" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#41ED88">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#65D506" colour2="#E49508" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat13.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 194" layer="194" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="194" outmap="194" order="194" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#48EC05">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#40F3ED" colour2="#9B3D18" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat14.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 195" layer="195" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="195" outmap="195" order="195" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#796C2D">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#2F2A1D" colour2="#280F86" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat15.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 196" layer="196" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="196" outmap="196" order="196" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#6D4294">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#455349" colour2="#98E74E" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat16.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 197" layer="197" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="197" outmap="197" order="197" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#859751">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#0B22AE" colour2="#F33442" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat17.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 198" layer="198" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="198" outmap="198" order="198" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#EDD267">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#414A8B" colour2="#59AD5D" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat18.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+        <o classname="a2dLayerInfo" name="Layer 199" layer="199" hitflags=" visible" layervisible="true" layerselectable="true" readlayer="true" inmap="199" outmap="199" order="199" description="" feature="" subfeature="" type="" polarity="true" span="" area="0">
+            
+            <properties>
+                <o classname="a2dStrokeProperty" name="Stroke">
+                    <o classname="a2dStroke" type="a2dSTROKE_ONE_COLOUR" colour="#BF9AF9">
+                    </o>
+                </o>
+                <o classname="a2dFillProperty" name="Fill">
+                    <o classname="a2dFill" type="a2dFILL_BITMAP" colour="#0655AB" colour2="#3F2D62" style="a2dFILL_STIPPLE_MASK_OPAQUE_TRANSPARENT" filename="pat19.bmp">
+                    </o>
+                </o>
+            </properties>
+            
+        </o>
+    </o>
+</cvg>
